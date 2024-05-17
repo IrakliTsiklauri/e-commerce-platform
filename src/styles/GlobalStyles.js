@@ -12,10 +12,6 @@ body, input, button{
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 30px;
-    width: 100vh;
+    padding: 0 100px;
 }
 `;
