@@ -1,9 +1,33 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
 const Collections = () => {
   return (
-    <div>Collections</div>
-  )
-}
+    <MainSection>
+      <ImgSide>Collections</ImgSide>
+      <InfoSide>new collections</InfoSide>
+    </MainSection>
+  );
+};
 
-export default Collections
+export default Collections;
+
+const MainSection = styled.div`
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+`;
+
+const ImgSide = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const InfoSide = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

@@ -63,6 +63,10 @@ const NavigationLink = styled(NavLink)`
   font-size: 15px;
   color: rgba(105, 112, 125, 1);
   font-weight: 400;
+
+  &.active {
+    font-weight: 700;
+  }
 `;
 
 const CartAndAvatar = styled.div`
