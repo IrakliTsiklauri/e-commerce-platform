@@ -8,7 +8,7 @@ const HeaderSection = () => {
   return (
     <Header>
       <NavSide>
-        <h1>sneakers</h1>
+        <h1>Family Shop</h1>
         <Navigation>
           <NavigationLink to="/">Collections</NavigationLink>
           <NavigationLink to="/men">Men</NavigationLink>

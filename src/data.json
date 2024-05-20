@@ -1,0 +1,82 @@
+[
+  {
+    "name": "men clothes",
+    "category": {
+      "shoes": "shoes",
+      "plants": "plants"
+    },
+    "size": {
+      "41": "In Stock",
+      "42": "Out Of Stock",
+      "43": "In Stock",
+      "44": "In Stock"
+    },
+    "price": "150",
+    "currency": "gel",
+    "description": "lorem ipusm dollor"
+  },
+  {
+    "name": "women clothes",
+    "category": {
+      "shoes": "shoes",
+      "plants": "dress"
+    },
+    "size": {
+      "37": "In Stock",
+      "38": "In Stock",
+      "39": "In Stock",
+      "40": "Out Of Stock"
+    },
+    "price": "200",
+    "currency": "gel",
+    "description": "lorem ipusm dollor 1"
+  },
+  {
+    "name": "men clothes",
+    "category": {
+      "shoes": "shoes",
+      "plants": "plants"
+    },
+    "size": {
+      "s": "In Stock",
+      "m": "In Stoke",
+      "l": "Out Of Stock",
+      "xl": "In Stock"
+    },
+    "price": "150",
+    "currency": "gel",
+    "description": "lorem ipusm dollor"
+  },
+  {
+    "name": "women clothes",
+    "category": {
+      "shoes": "shoes",
+      "plants": "dress"
+    },
+    "size": {
+      "s": "In Stock",
+      "m": "Out Of Stock",
+      "l": "In Stock",
+      "xl": "In Stock"
+    },
+    "price": "150",
+    "currency": "gel",
+    "description": "lorem ipusm dollor"
+  },
+  {
+    "name": "children clothes",
+    "category": {
+      "shoes": "shoes",
+      "plants": "plants"
+    },
+    "size": {
+      "s": "In Stock",
+      "m": "Out Of Stock",
+      "l": "In Stock",
+      "xl": "In Stock"
+    },
+    "price": "80",
+    "currency": "gel",
+    "description": "lorem ipusm dollor"
+  }
+]
