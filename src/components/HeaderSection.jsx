@@ -8,11 +8,12 @@ const HeaderSection = () => {
   return (
     <Header>
       <NavSide>
-        <h1>Family Shop</h1>
+        <h1>Family Style</h1>
         <Navigation>
           <NavigationLink to="/">Collections</NavigationLink>
           <NavigationLink to="/men">Men</NavigationLink>
           <NavigationLink to="/women">Women</NavigationLink>
+          <NavigationLink to="/children">Children</NavigationLink>
           <NavigationLink to="/about">About</NavigationLink>
           <NavigationLink to="/contact">Contact</NavigationLink>
         </Navigation>

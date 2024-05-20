@@ -1,7 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+// import data from "../data.json"
 
 const Collections = () => {
+
+  // const info = data.map((product)=>product.name)
+  // console.log(info)
+
+
   return (
     <AllProducts>
       <TopSide>
