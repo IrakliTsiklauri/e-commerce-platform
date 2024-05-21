@@ -1,18 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import data from "../data.json";
+import { useParams } from "react-router-dom";
 
-const Collections = () => {
+const Collections = ({ category }) => {
+  const { category: paramCategory } = useParams();
+  const selectedCategory = category || paramCategory;
+
+  const filteredData = selectedCategory
+    ? data.filter((item) => item.name === selectedCategory)
+    : data;
+
+  console.log(filteredData);
+
   return (
     <Main>
-      {data.map((item, index) => (
+      {filteredData.map((item, index) => (
         <Product key={index}>
-          <img src={item.image} alt="shoe" />
+          <img src={item.image} alt={item.name} />
           <h4>{item.name}</h4>
-          <p>Shoes - {item.category.shoes}</p>
-          <p>
-            Price: {item.price} {item.currency}
-          </p>
+          <ItemCategory>Category - {item.category}</ItemCategory>
+          <ItemPrice>
+            <span>Price:</span> {item.price} {item.currency}
+          </ItemPrice>
         </Product>
       ))}
     </Main>
@@ -36,11 +46,13 @@ const Product = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 5px;
   background-color: #efeeee;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 8px;
   width: 300px;
+  height: 400px;
   cursor: pointer;
   overflow: hidden;
 
@@ -50,7 +62,31 @@ const Product = styled.div`
     border-radius: 8px;
   }
 
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: orange;
+  }
+
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+`;
+
+const ItemCategory = styled.p`
+  font-size: 16px;
+  font-weight: 400;
+  color: #c7c751;
+`;
+
+const ItemPrice = styled.p`
+  font-size: 16px;
+  font-weight: 700;
+  color: green;
+
+  span {
+    font-size: 18px;
+    font-weight: 700;
+    color: red;
   }
 `;

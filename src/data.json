@@ -1,10 +1,7 @@
 [
   {
     "name": "Men Clothes",
-    "category": {
-      "shoes": "Men Shoes",
-      "plants": "Men Plants"
-    },
+    "category": "Men's Shoes",
     "size": {
       "41": "In Stock",
       "42": "Out Of Stock",
@@ -14,14 +11,11 @@
     "price": "150",
     "currency": "GEL",
     "description": "lorem ipusm dollor",
-    "image": "./assets/image-product-1.jpg"
+    "image": "/assets/image-product-1.jpg"
   },
   {
     "name": "Women Clothes",
-    "category": {
-      "shoes": "Women Shoes",
-      "plants": "Women Dress"
-    },
+    "category": "Women's Shoes",
     "size": {
       "37": "In Stock",
       "38": "In Stock",
@@ -31,48 +25,39 @@
     "price": "200",
     "currency": "GEL",
     "description": "lorem ipusm dollor 1",
-    "image": "./assets/image-shoes-women.jpg"
+    "image": "/assets/image-shoes-women.jpg"
   },
   {
     "name": "Men Clothes",
-    "category": {
-      "shoes": "Men Shoes",
-      "plants": "Men Plants"
-    },
+    "category": "Men's Pants",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
       "l": "Out Of Stock",
       "xl": "In Stock"
     },
-    "price": "150",
+    "price": "130",
     "currency": "GEL",
     "description": "lorem ipusm dollor",
-    "image": "./assets/image-plants-men.jpg"
+    "image": "/assets/image-pants-men.jpg"
   },
   {
     "name": "Women Clothes",
-    "category": {
-      "shoes": "Women Shoes",
-      "plants": "Women Dress"
-    },
+    "category": "Women's Dress",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
       "l": "In Stock",
       "xl": "In Stock"
     },
-    "price": "150",
+    "price": "170",
     "currency": "GEL",
     "description": "lorem ipusm dollor",
-    "image": "./assets/image-dress-women.jpg"
+    "image": "/assets/image-dress-women.jpg"
   },
   {
     "name": "Children Clothes",
-    "category": {
-      "shoes": "Children Shoes",
-      "plants": "Children Plants"
-    },
+    "category": "Children's Shoes",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -82,7 +67,146 @@
     "price": "80",
     "currency": "GEL",
     "description": "lorem ipusm dollor",
-    "image": "./assets/image-shoes-children.jpg"
-
+    "image": "/assets/image-shoes-children.jpg"
+  },
+  {
+    "name": "Children Clothes",
+    "category": "Children's Jacket",
+    "size": {
+      "s": "In Stock",
+      "m": "Out Of Stock",
+      "l": "In Stock",
+      "xl": "In Stock"
+    },
+    "price": "75",
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "/assets/image-jacket-children.jpg"
+  },
+  {
+    "name": "Children Clothes",
+    "category": "Children's Pants",
+    "size": {
+      "s": "In Stock",
+      "m": "Out Of Stock",
+      "l": "In Stock",
+      "xl": "In Stock"
+    },
+    "price": "55",
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "/assets/image-pants-kids.jpg"
+  },
+  {
+    "name": "Men Clothes",
+    "category": "Men's Jacket",
+    "size": {
+      "s": "In Stock",
+      "m": "In Stoke",
+      "l": "Out Of Stock",
+      "xl": "In Stock"
+    },
+    "price": "60",
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "/assets/image-jacket-men.jpg"
+  },
+  {
+    "name": "Women Clothes",
+    "category": "Women's Jacket",
+    "size": {
+      "s": "In Stock",
+      "m": "Out Of Stock",
+      "l": "In Stock",
+      "xl": "In Stock"
+    },
+    "price": "110",
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "/assets/image-jacket-women.jpg"
+  },
+  {
+    "name": "Men Clothes",
+    "category": "Men's T-shirt",
+    "size": {
+      "s": "In Stock",
+      "m": "In Stoke",
+      "l": "Out Of Stock",
+      "xl": "In Stock"
+    },
+    "price": "25",
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "/assets/image-tshirt-men.jpg"
+  },
+  {
+    "name": "Women Clothes",
+    "category": "Women's T-shirt",
+    "size": {
+      "s": "In Stock",
+      "m": "Out Of Stock",
+      "l": "In Stock",
+      "xl": "In Stock"
+    },
+    "price": "35",
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "/assets/image-tshirt-women.jpg"
+  },
+  {
+    "name": "Children Clothes",
+    "category": "Children's T-shirt",
+    "size": {
+      "s": "In Stock",
+      "m": "Out Of Stock",
+      "l": "In Stock",
+      "xl": "In Stock"
+    },
+    "price": "15",
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "/assets/image-tshirt-kids.jpg"
+  },
+  {
+    "name": "Men Clothes",
+    "category": "Men's Glass",
+    "size": {
+      "s": "In Stock",
+      "m": "In Stoke",
+      "l": "Out Of Stock",
+      "xl": "In Stock"
+    },
+    "price": "25",
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "/assets/image-glass-men.jpg"
+  },
+  {
+    "name": "Women Clothes",
+    "category": "Women's Pants",
+    "size": {
+      "s": "In Stock",
+      "m": "Out Of Stock",
+      "l": "In Stock",
+      "xl": "In Stock"
+    },
+    "price": "99",
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "/assets/image-pants-women.jpg"
+  },
+  {
+    "name": "Children Clothes",
+    "category": "Children's Short",
+    "size": {
+      "s": "In Stock",
+      "m": "Out Of Stock",
+      "l": "In Stock",
+      "xl": "In Stock"
+    },
+    "price": "37",
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "/assets/image-short-kids.jpg"
   }
 ]

@@ -10,13 +10,15 @@ const HeaderSection = () => {
     <Header>
       <NavSide>
         <LogoImg>
-          <img src={logo} alt="" />{" "}
+          <img src={logo} alt="logo" />
         </LogoImg>
         <Navigation>
           <NavigationLink to="/">Collections</NavigationLink>
-          <NavigationLink to="/men">Men</NavigationLink>
-          <NavigationLink to="/women">Women</NavigationLink>
-          <NavigationLink to="/children">Children</NavigationLink>
+          <NavigationLink to="/collections/Men Clothes">Men</NavigationLink>
+          <NavigationLink to="/collections/Women Clothes">Women</NavigationLink>
+          <NavigationLink to="/collections/Children Clothes">
+            Children
+          </NavigationLink>
           <NavigationLink to="/about">About</NavigationLink>
           <NavigationLink to="/contact">Contact</NavigationLink>
         </Navigation>
@@ -66,12 +68,12 @@ const LogoImg = styled.div`
 const Navigation = styled.nav`
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 `;
 
 const NavigationLink = styled(NavLink)`
   text-decoration: none;
-  font-size: 15px;
+  font-size: 25px;
   color: rgba(105, 112, 125, 1);
   font-weight: 400;
 
