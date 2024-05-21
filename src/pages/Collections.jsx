@@ -1,12 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-// import data from "../data.json"
+import data from "../data.json"
+import { useParams } from "react-router-dom";
 
 const Collections = () => {
 
   // const info = data.map((product)=>product.name)
   // console.log(info)
-
+  const params = useParams();
+  const paramsName = params.name;
+  const planetData = data.find((planetObj) => planetObj.name === paramsName);
+  console.log(planetData)
 
   return (
     <AllProducts>

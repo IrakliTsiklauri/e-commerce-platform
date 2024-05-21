@@ -3,12 +3,15 @@ import cart from "../images/icon-cart.svg";
 import avatar from "../images/image-avatar.png";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import logo from "../images/newlogo.png";
 
 const HeaderSection = () => {
   return (
     <Header>
       <NavSide>
-        <h1>Family Style</h1>
+        <LogoImg>
+          <img src={logo} alt="" />{" "}
+        </LogoImg>
         <Navigation>
           <NavigationLink to="/">Collections</NavigationLink>
           <NavigationLink to="/men">Men</NavigationLink>
@@ -46,10 +49,17 @@ const NavSide = styled.div`
   align-items: center;
   justify-content: center;
   gap: 50px;
+`;
 
-  h1 {
-    font-size: 30px;
-    color: rgba(29, 32, 38, 1);
+const LogoImg = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  img {
+    width: 150px;
+    height: 75px;
   }
 `;
 
