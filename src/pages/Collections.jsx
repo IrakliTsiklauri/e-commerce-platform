@@ -1,89 +1,56 @@
 import React from "react";
 import styled from "styled-components";
-import data from "../data.json"
-import { useParams } from "react-router-dom";
+import data from "../data.json";
 
 const Collections = () => {
-
-  // const info = data.map((product)=>product.name)
-  // console.log(info)
-  const params = useParams();
-  const paramsName = params.name;
-  const planetData = data.find((planetObj) => planetObj.name === paramsName);
-  console.log(planetData)
-
   return (
-    <AllProducts>
-      <TopSide>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-      </TopSide>
-      <MidSide>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-      </MidSide>
-      <BottomSide>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-      </BottomSide>
-    </AllProducts>
+    <Main>
+      {data.map((item, index) => (
+        <Product key={index}>
+          <img src={item.image} alt="shoe" />
+          <h4>{item.name}</h4>
+          <p>Shoes - {item.category.shoes}</p>
+          <p>
+            Price: {item.price} {item.currency}
+          </p>
+        </Product>
+      ))}
+    </Main>
   );
 };
 
 export default Collections;
 
-const AllProducts = styled.div`
+const Main = styled.div`
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 20px;
   margin-top: 50px;
-  width: 100%;
-`;
-
-const TopSide = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-`;
-
-const MidSide = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-`;
-
-const BottomSide = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
 `;
 
 const Product = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  border-radius: 5px;
-  background-color: #ece9e9;
+  background-color: #efeeee;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
   width: 300px;
-  height: 300px;
   cursor: pointer;
+  overflow: hidden;
+
+  img {
+    width: 280px;
+    height: 280px;
+    border-radius: 8px;
+  }
 
   &:hover {
-    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 `;

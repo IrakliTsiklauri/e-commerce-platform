@@ -1,9 +1,9 @@
 [
   {
-    "name": "men clothes",
+    "name": "Men Clothes",
     "category": {
-      "shoes": "shoes",
-      "plants": "plants"
+      "shoes": "Men Shoes",
+      "plants": "Men Plants"
     },
     "size": {
       "41": "In Stock",
@@ -12,14 +12,15 @@
       "44": "In Stock"
     },
     "price": "150",
-    "currency": "gel",
-    "description": "lorem ipusm dollor"
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "./assets/image-product-1.jpg"
   },
   {
-    "name": "women clothes",
+    "name": "Women Clothes",
     "category": {
-      "shoes": "shoes",
-      "plants": "dress"
+      "shoes": "Women Shoes",
+      "plants": "Women Dress"
     },
     "size": {
       "37": "In Stock",
@@ -28,14 +29,15 @@
       "40": "Out Of Stock"
     },
     "price": "200",
-    "currency": "gel",
-    "description": "lorem ipusm dollor 1"
+    "currency": "GEL",
+    "description": "lorem ipusm dollor 1",
+    "image": "./assets/image-shoes-women.jpg"
   },
   {
-    "name": "men clothes",
+    "name": "Men Clothes",
     "category": {
-      "shoes": "shoes",
-      "plants": "plants"
+      "shoes": "Men Shoes",
+      "plants": "Men Plants"
     },
     "size": {
       "s": "In Stock",
@@ -44,14 +46,15 @@
       "xl": "In Stock"
     },
     "price": "150",
-    "currency": "gel",
-    "description": "lorem ipusm dollor"
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "./assets/image-plants-men.jpg"
   },
   {
-    "name": "women clothes",
+    "name": "Women Clothes",
     "category": {
-      "shoes": "shoes",
-      "plants": "dress"
+      "shoes": "Women Shoes",
+      "plants": "Women Dress"
     },
     "size": {
       "s": "In Stock",
@@ -60,14 +63,15 @@
       "xl": "In Stock"
     },
     "price": "150",
-    "currency": "gel",
-    "description": "lorem ipusm dollor"
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "./assets/image-dress-women.jpg"
   },
   {
-    "name": "children clothes",
+    "name": "Children Clothes",
     "category": {
-      "shoes": "shoes",
-      "plants": "plants"
+      "shoes": "Children Shoes",
+      "plants": "Children Plants"
     },
     "size": {
       "s": "In Stock",
@@ -76,7 +80,9 @@
       "xl": "In Stock"
     },
     "price": "80",
-    "currency": "gel",
-    "description": "lorem ipusm dollor"
+    "currency": "GEL",
+    "description": "lorem ipusm dollor",
+    "image": "./assets/image-shoes-children.jpg"
+
   }
 ]
