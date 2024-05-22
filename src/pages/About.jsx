@@ -93,7 +93,7 @@ const AboutSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px 0;
+  margin-top: 50px;
   gap: 40px;
 `;
 

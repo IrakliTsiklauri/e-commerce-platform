@@ -1,6 +1,6 @@
 import React from "react";
 import cart from "../images/icon-cart.svg";
-import avatar from "../images/image-avatar.png";
+import avatar from "../images/image-my-avatar.png";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../images/image-logo.png";
@@ -96,8 +96,8 @@ const Cart = styled.div`
   cursor: pointer;
 
   img {
-    width: 21px;
-    height: 21px;
+    width: 40px;
+    height: 40px;
   }
 `;
 
@@ -109,8 +109,8 @@ const Avatar = styled.div`
   border-radius: 50%;
 
   img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
   }
 `;

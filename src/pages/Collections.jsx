@@ -10,7 +10,7 @@ const Collections = ({ category }) => {
   const selectedCategory = category || paramCategory;
 
   const filteredData = selectedCategory
-    ? data.filter((item) => item.category === selectedCategory)
+    ? data.filter((item) => item.name === selectedCategory)
     : data;
 
     const handleItemClick = (itemId) => {

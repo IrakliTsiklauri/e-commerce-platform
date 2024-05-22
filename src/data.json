@@ -3,6 +3,8 @@
     "id": "1",
     "name": "Men Clothes",
     "category": "Men's Shoes",
+    "company": "Family Style",
+    "info": "Fall Limited Edition Sneakers",
     "size": {
       "41": "In Stock",
       "42": "Out Of Stock",
@@ -18,6 +20,8 @@
     "id": "2",
     "name": "Women Clothes",
     "category": "Women's Shoes",
+    "company": "Family Style",
+    "info": "Women's Solid Color Elastic Sandals",
     "size": {
       "37": "In Stock",
       "38": "In Stock",
@@ -33,6 +37,8 @@
     "id": "3",
     "name": "Men Clothes",
     "category": "Men's Pants",
+    "company": "Family Style",
+    "info": "Cotton Blend Men's Trendy Solid Wide Leg Jeans",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -48,6 +54,8 @@
     "id": "4",
     "name": "Women Clothes",
     "category": "Women's Dress",
+    "company": "Family Style",
+    "info": "Surplice Neck Split Hem Dress",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -63,6 +71,8 @@
     "id": "5",
     "name": "Children Clothes",
     "category": "Children's Shoes",
+    "company": "Family Style",
+    "info": "Boys Girls Trendy Sandals",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -78,6 +88,8 @@
     "id": "6",
     "name": "Children Clothes",
     "category": "Children's Jacket",
+    "company": "Family Style",
+    "info": "Girls Cartoon Pattern Casual Hoodie Jacket",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -93,6 +105,8 @@
     "id": "7",
     "name": "Children Clothes",
     "category": "Children's Pants",
+    "company": "Family Style",
+    "info": "Boys Ripped Denim Jeans Long Pants Preppy Style Kids Clothes",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -108,6 +122,8 @@
     "id": "8",
     "name": "Men Clothes",
     "category": "Men's Jacket",
+    "company": "Family Style",
+    "info": "Mens Clothing Graphic Hooded Jacket",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -123,6 +139,8 @@
     "id": "9",
     "name": "Women Clothes",
     "category": "Women's Jacket",
+    "company": "Family Style",
+    "info": "Color Block Zip Up Hooded Jacket",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -138,6 +156,8 @@
     "id": "10",
     "name": "Men Clothes",
     "category": "Men's T-shirt",
+    "company": "Family Style",
+    "info": "Solid Waffle Knit T-shirt",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -153,6 +173,8 @@
     "id": "11",
     "name": "Women Clothes",
     "category": "Women's T-shirt",
+    "company": "Family Style",
+    "info": "Cute Cat Print T-shirt",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -168,6 +190,8 @@
     "id": "12",
     "name": "Children Clothes",
     "category": "Children's T-shirt",
+    "company": "Family Style",
+    "info": "Cute Anime Cats Graphic Print For Girls",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -183,6 +207,8 @@
     "id": "13",
     "name": "Men Clothes",
     "category": "Men's Glass",
+    "company": "Family Style",
+    "info": "Trendy Driving Polarized Fashion Glasses",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -198,6 +224,8 @@
     "id": "14",
     "name": "Women Clothes",
     "category": "Women's Pants",
+    "company": "Family Style",
+    "info": "Slant Pockets Wide Leg Pants",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -213,6 +241,8 @@
     "id": "15",
     "name": "Children Clothes",
     "category": "Children's Short",
+    "company": "Family Style",
+    "info": "Baby Boys 'Daddy's Boy' Cotton T-Shirt And Shorts Set",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
