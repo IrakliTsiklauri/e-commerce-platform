@@ -3,7 +3,7 @@ import cart from "../images/icon-cart.svg";
 import avatar from "../images/image-avatar.png";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../images/newlogo.png";
+import logo from "../images/image-logo.png";
 
 const HeaderSection = () => {
   return (

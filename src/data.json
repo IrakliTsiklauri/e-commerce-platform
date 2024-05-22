@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "name": "Men Clothes",
     "category": "Men's Shoes",
     "size": {
@@ -14,6 +15,7 @@
     "image": "/assets/image-product-1.jpg"
   },
   {
+    "id": "2",
     "name": "Women Clothes",
     "category": "Women's Shoes",
     "size": {
@@ -28,6 +30,7 @@
     "image": "/assets/image-shoes-women.jpg"
   },
   {
+    "id": "3",
     "name": "Men Clothes",
     "category": "Men's Pants",
     "size": {
@@ -42,6 +45,7 @@
     "image": "/assets/image-pants-men.jpg"
   },
   {
+    "id": "4",
     "name": "Women Clothes",
     "category": "Women's Dress",
     "size": {
@@ -56,6 +60,7 @@
     "image": "/assets/image-dress-women.jpg"
   },
   {
+    "id": "5",
     "name": "Children Clothes",
     "category": "Children's Shoes",
     "size": {
@@ -70,6 +75,7 @@
     "image": "/assets/image-shoes-children.jpg"
   },
   {
+    "id": "6",
     "name": "Children Clothes",
     "category": "Children's Jacket",
     "size": {
@@ -84,6 +90,7 @@
     "image": "/assets/image-jacket-children.jpg"
   },
   {
+    "id": "7",
     "name": "Children Clothes",
     "category": "Children's Pants",
     "size": {
@@ -98,6 +105,7 @@
     "image": "/assets/image-pants-kids.jpg"
   },
   {
+    "id": "8",
     "name": "Men Clothes",
     "category": "Men's Jacket",
     "size": {
@@ -112,6 +120,7 @@
     "image": "/assets/image-jacket-men.jpg"
   },
   {
+    "id": "9",
     "name": "Women Clothes",
     "category": "Women's Jacket",
     "size": {
@@ -126,6 +135,7 @@
     "image": "/assets/image-jacket-women.jpg"
   },
   {
+    "id": "10",
     "name": "Men Clothes",
     "category": "Men's T-shirt",
     "size": {
@@ -140,6 +150,7 @@
     "image": "/assets/image-tshirt-men.jpg"
   },
   {
+    "id": "11",
     "name": "Women Clothes",
     "category": "Women's T-shirt",
     "size": {
@@ -154,6 +165,7 @@
     "image": "/assets/image-tshirt-women.jpg"
   },
   {
+    "id": "12",
     "name": "Children Clothes",
     "category": "Children's T-shirt",
     "size": {
@@ -168,6 +180,7 @@
     "image": "/assets/image-tshirt-kids.jpg"
   },
   {
+    "id": "13",
     "name": "Men Clothes",
     "category": "Men's Glass",
     "size": {
@@ -182,6 +195,7 @@
     "image": "/assets/image-glass-men.jpg"
   },
   {
+    "id": "14",
     "name": "Women Clothes",
     "category": "Women's Pants",
     "size": {
@@ -196,6 +210,7 @@
     "image": "/assets/image-pants-women.jpg"
   },
   {
+    "id": "15",
     "name": "Children Clothes",
     "category": "Children's Short",
     "size": {
