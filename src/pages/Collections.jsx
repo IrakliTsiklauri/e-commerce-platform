@@ -1,22 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 import data from "../data.json";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const Collections = ({ category }) => {
   const { category: paramCategory } = useParams();
+  const navigate = useNavigate()
+  console.log(navigate)
   const selectedCategory = category || paramCategory;
 
   const filteredData = selectedCategory
-    ? data.filter((item) => item.name === selectedCategory)
+    ? data.filter((item) => item.category === selectedCategory)
     : data;
 
-  console.log(filteredData);
+    const handleItemClick = (itemId) => {
+      navigate(`/items/${itemId}`);
+    };
 
   return (
     <Main>
-      {filteredData.map((item, index) => (
-        <Product key={index}>
+      {filteredData.map((item) => (
+        <Product key={item.id} onClick={() => handleItemClick(item.id)}>
           <img src={item.image} alt={item.name} />
           <h4>{item.name}</h4>
           <ItemCategory>Category - {item.category}</ItemCategory>

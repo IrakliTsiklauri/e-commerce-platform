@@ -6,8 +6,9 @@ import Collections from "./pages/Collections";
 // import Children from "./pages/Children";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-
 import AppLayout from "./ui/AppLayout";
+import ItemDetail from "./components/ItemDetail";
+
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route path="/children" element={<Collections category="Children Clothes" />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/items/:itemId" element={<ItemDetail />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
