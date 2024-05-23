@@ -4,7 +4,8 @@
     "name": "Men Clothes",
     "category": "Men's Shoes",
     "company": "Family Style",
-    "info": "Fall Limited Edition Sneakers",
+    "info": "Men's Vintage Fitness Training Shoes",
+    "description": "Men's Vintage Fitness Training Shoes, Comfy Non Slip Lace Up Durable Sneakers For Men's Outdoor Activities",
     "size": {
       "41": "In Stock",
       "42": "Out Of Stock",
@@ -13,8 +14,7 @@
     },
     "price": "150",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
-    "image": "/assets/image-product-1.jpg"
+    "image": "/assets/image-shoes-men.jpg"
   },
   {
     "id": "2",
@@ -22,6 +22,7 @@
     "category": "Women's Shoes",
     "company": "Family Style",
     "info": "Women's Solid Color Elastic Sandals",
+    "description": "lorem ipusm dollor",
     "size": {
       "37": "In Stock",
       "38": "In Stock",
@@ -30,7 +31,6 @@
     },
     "price": "200",
     "currency": "GEL",
-    "description": "lorem ipusm dollor 1",
     "image": "/assets/image-shoes-women.jpg"
   },
   {
@@ -39,6 +39,7 @@
     "category": "Men's Pants",
     "company": "Family Style",
     "info": "Cotton Blend Men's Trendy Solid Wide Leg Jeans",
+    "description": "lorem ipusm dollor 1",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -47,7 +48,6 @@
     },
     "price": "130",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-pants-men.jpg"
   },
   {
@@ -56,6 +56,7 @@
     "category": "Women's Dress",
     "company": "Family Style",
     "info": "Surplice Neck Split Hem Dress",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -64,7 +65,6 @@
     },
     "price": "170",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-dress-women.jpg"
   },
   {
@@ -73,6 +73,7 @@
     "category": "Children's Shoes",
     "company": "Family Style",
     "info": "Boys Girls Trendy Sandals",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -81,7 +82,6 @@
     },
     "price": "80",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-shoes-children.jpg"
   },
   {
@@ -90,6 +90,7 @@
     "category": "Children's Jacket",
     "company": "Family Style",
     "info": "Girls Cartoon Pattern Casual Hoodie Jacket",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -98,7 +99,6 @@
     },
     "price": "75",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-jacket-children.jpg"
   },
   {
@@ -107,6 +107,7 @@
     "category": "Children's Pants",
     "company": "Family Style",
     "info": "Boys Ripped Denim Jeans Long Pants Preppy Style Kids Clothes",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -115,7 +116,6 @@
     },
     "price": "55",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-pants-kids.jpg"
   },
   {
@@ -124,6 +124,7 @@
     "category": "Men's Jacket",
     "company": "Family Style",
     "info": "Mens Clothing Graphic Hooded Jacket",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -132,7 +133,6 @@
     },
     "price": "60",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-jacket-men.jpg"
   },
   {
@@ -141,6 +141,7 @@
     "category": "Women's Jacket",
     "company": "Family Style",
     "info": "Color Block Zip Up Hooded Jacket",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -149,7 +150,6 @@
     },
     "price": "110",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-jacket-women.jpg"
   },
   {
@@ -158,6 +158,7 @@
     "category": "Men's T-shirt",
     "company": "Family Style",
     "info": "Solid Waffle Knit T-shirt",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -166,7 +167,6 @@
     },
     "price": "25",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-tshirt-men.jpg"
   },
   {
@@ -175,6 +175,7 @@
     "category": "Women's T-shirt",
     "company": "Family Style",
     "info": "Cute Cat Print T-shirt",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -183,7 +184,6 @@
     },
     "price": "35",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-tshirt-women.jpg"
   },
   {
@@ -192,6 +192,7 @@
     "category": "Children's T-shirt",
     "company": "Family Style",
     "info": "Cute Anime Cats Graphic Print For Girls",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -200,7 +201,6 @@
     },
     "price": "15",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-tshirt-kids.jpg"
   },
   {
@@ -209,6 +209,7 @@
     "category": "Men's Glass",
     "company": "Family Style",
     "info": "Trendy Driving Polarized Fashion Glasses",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -217,7 +218,6 @@
     },
     "price": "25",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-glass-men.jpg"
   },
   {
@@ -226,6 +226,7 @@
     "category": "Women's Pants",
     "company": "Family Style",
     "info": "Slant Pockets Wide Leg Pants",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -234,7 +235,6 @@
     },
     "price": "99",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-pants-women.jpg"
   },
   {
@@ -243,6 +243,7 @@
     "category": "Children's Short",
     "company": "Family Style",
     "info": "Baby Boys 'Daddy's Boy' Cotton T-Shirt And Shorts Set",
+    "description": "lorem ipusm dollor",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -251,7 +252,6 @@
     },
     "price": "37",
     "currency": "GEL",
-    "description": "lorem ipusm dollor",
     "image": "/assets/image-short-kids.jpg"
   }
 ]
