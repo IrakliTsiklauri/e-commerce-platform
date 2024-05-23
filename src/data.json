@@ -14,7 +14,13 @@
     },
     "price": "150",
     "currency": "GEL",
-    "image": "/assets/image-shoes-men.jpg"
+    "images":{
+        "image":"/assets/image-shoes-men.jpg",
+        "image1":"/assets/image-shoes-men1.jpg",
+        "image2":"/assets/image-shoes-men2.jpg",
+        "image3":"/assets/image-shoes-men3.jpg",
+        "image4":"/assets/image-shoes-men4.jpg"
+    }
   },
   {
     "id": "2",
@@ -31,7 +37,13 @@
     },
     "price": "200",
     "currency": "GEL",
-    "image": "/assets/image-shoes-women.jpg"
+    "images":{
+        "image":"/assets/image-shoes-women.jpg",
+        "image1":"/assets/image-shoes-women1.jpg",
+        "image2":"/assets/image-shoes-women2.jpg",
+        "image3":"/assets/image-shoes-women3.jpg",
+        "image4":"/assets/image-shoes-women4.jpg.jpg"
+    }
   },
   {
     "id": "3",
@@ -48,7 +60,13 @@
     },
     "price": "130",
     "currency": "GEL",
-    "image": "/assets/image-pants-men.jpg"
+    "images":{
+        "image":"/assets/image-pants-men.jpg",
+        "image1":"/assets/image-pants-men1.jpg",
+        "image2":"/assets/image-pants-men2.jpg",
+        "image3":"/assets/image-pants-men3.jpg",
+        "image4":"/assets/image-pants-men4.jpg"
+    }
   },
   {
     "id": "4",
@@ -65,7 +83,13 @@
     },
     "price": "170",
     "currency": "GEL",
-    "image": "/assets/image-dress-women.jpg"
+    "images":{
+        "image":"/assets/image-dress-women.jpg",
+        "image1":"/assets/image-dress-women1.jpg",
+        "image2":"/assets/image-dress-women2.jpg",
+        "image3":"/assets/image-dress-women3.jpg",
+        "image4":"/assets/image-dress-women4.jpg"
+    }
   },
   {
     "id": "5",
@@ -82,7 +106,13 @@
     },
     "price": "80",
     "currency": "GEL",
-    "image": "/assets/image-shoes-children.jpg"
+    "images":{
+        "image":"/assets/image-shoes-children.jpg",
+        "image1":"/assets/image-shoes-children1.jpg",
+        "image2":"/assets/image-shoes-children2.jpg",
+        "image3":"/assets/image-shoes-children3.jpg",
+        "image4":"/assets/image-shoes-children4.jpg"
+    }
   },
   {
     "id": "6",
@@ -99,7 +129,13 @@
     },
     "price": "75",
     "currency": "GEL",
-    "image": "/assets/image-jacket-children.jpg"
+    "images":{
+        "image":"/assets/image-jacket-children.jpg",
+        "image1":"/assets/image-jacket-children1.jpg",
+        "image2":"/assets/image-jacket-children2.jpg",
+        "image3":"/assets/image-jacket-children3.jpg",
+        "image4":"/assets/image-jacket-children4.jpg.jpg"
+    }
   },
   {
     "id": "7",
@@ -116,7 +152,13 @@
     },
     "price": "55",
     "currency": "GEL",
-    "image": "/assets/image-pants-kids.jpg"
+    "images":{
+        "image":"/assets/image-pants-kids.jpg",
+        "image1":"/assets/image-pants-kids1.jpg",
+        "image2":"/assets/image-pants-kids2.jpg",
+        "image3":"/assets/image-pants-kids3.jpg.jpg",
+        "image4":"/assets/image-pants-kids4.jpg.jpg.jpg"
+    }
   },
   {
     "id": "8",
@@ -133,7 +175,13 @@
     },
     "price": "60",
     "currency": "GEL",
-    "image": "/assets/image-jacket-men.jpg"
+    "images":{
+        "image":"/assets/image-jacket-men.jpg",
+        "image1":"/assets/image-jacket-men1.jpg",
+        "image2":"/assets/image-jacket-men2.jpg",
+        "image3":"/assets/image-jacket-men3.jpg",
+        "image4":"/assets/image-jacket-men4.jpg"
+    }
   },
   {
     "id": "9",
@@ -150,7 +198,13 @@
     },
     "price": "110",
     "currency": "GEL",
-    "image": "/assets/image-jacket-women.jpg"
+    "images":{
+        "image":"/assets/image-jacket-women.jpg",
+        "image1":"/assets/image-jacket-women1.jpg",
+        "image2":"/assets/image-jacket-women2.jpg",
+        "image3":"/assets/image-jacket-women3.jpg",
+        "image4":"/assets/image-jacket-women4.jpg"
+    }
   },
   {
     "id": "10",
@@ -167,7 +221,13 @@
     },
     "price": "25",
     "currency": "GEL",
-    "image": "/assets/image-tshirt-men.jpg"
+    "images":{
+        "image":"/assets/image-tshirt-men.jpg",
+        "image1":"/assets/image-tshirt-men1.jpg",
+        "image2":"/assets/image-tshirt-men2.jpg",
+        "image3":"/assets/image-tshirt-men3.jpg",
+        "image4":"/assets/image-tshirt-men4.jpg"
+    }
   },
   {
     "id": "11",
@@ -184,7 +244,13 @@
     },
     "price": "35",
     "currency": "GEL",
-    "image": "/assets/image-tshirt-women.jpg"
+    "images":{
+        "image":"/assets/image-tshirt-women.jpg",
+        "image1":"/assets/image-tshirt-women1.jpg",
+        "image2":"/assets/image-tshirt-women2.jpg",
+        "image3":"/assets/image-tshirt-women3.jpg",
+        "image4":"/assets/image-tshirt-women4.jpg"
+    }
   },
   {
     "id": "12",
@@ -201,7 +267,13 @@
     },
     "price": "15",
     "currency": "GEL",
-    "image": "/assets/image-tshirt-kids.jpg"
+    "images":{
+        "image":"/assets/image-tshirt-kids.jpg",
+        "image1":"/assets/image-tshirt-kids1.jpg",
+        "image2":"/assets/image-tshirt-kids2.jpg",
+        "image3":"/assets/image-tshirt-kids3.jpg",
+        "image4":"/assets/image-tshirt-kids4.jpg"
+    }
   },
   {
     "id": "13",
@@ -218,7 +290,13 @@
     },
     "price": "25",
     "currency": "GEL",
-    "image": "/assets/image-glass-men.jpg"
+    "images":{
+        "image":"/assets/image-glass-men.jpg",
+        "image1":"/assets/image-glass-men1.jpg",
+        "image2":"/assets/image-glass-men2.jpg",
+        "image3":"/assets/image-glass-men3.jpg",
+        "image4":"/assets/image-glass-men4.jpg"
+    }
   },
   {
     "id": "14",
@@ -235,7 +313,13 @@
     },
     "price": "99",
     "currency": "GEL",
-    "image": "/assets/image-pants-women.jpg"
+    "images":{
+        "image":"/assets/image-pants-women.jpg",
+        "image1":"/assets/image-pants-women1.jpg",
+        "image2":"/assets/image-pants-women2.jpg",
+        "image3":"/assets/image-pants-women3.jpg",
+        "image4":"/assets/image-pants-women4.jpg"
+    }
   },
   {
     "id": "15",
@@ -252,6 +336,12 @@
     },
     "price": "37",
     "currency": "GEL",
-    "image": "/assets/image-short-kids.jpg"
+    "images":{
+        "image":"/assets/image-short-kids.jpg",
+        "image1":"/assets/image-short-kids1.jpg",
+        "image2":"/assets/image-short-kids2.jpg",
+        "image3":"/assets/image-short-kids3.jpg",
+        "image4":"/assets/image-short-kids4.jpg"
+    }
   }
 ]

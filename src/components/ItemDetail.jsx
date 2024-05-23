@@ -77,25 +77,27 @@ const InfoSide = styled.div`
   align-items: start;
   justify-content: center;
   gap: 40px;
+  width: 600px;
 `;
 
 const Shipping = styled.div`
   display: flex;
-  gap: 50px;
+  gap: 20px;
   align-items: center;
   background-color: #feefe1;
   padding: 30px 20px;
   width: 100%;
+  border-radius: 10px;
 `;
 
 const FreeShipping = styled.div`
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
   width: 65%;
   text-align: center;
 
-  img{
+  img {
     width: 50px;
   }
 
@@ -139,6 +141,7 @@ const ItemInfo = styled.p`
 const ItemDescription = styled.p`
   font-size: 16px;
   font-weight: 400;
+  color: #b7b3b3;
 `;
 
 const ItemPrice = styled.span`

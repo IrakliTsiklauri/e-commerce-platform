@@ -21,7 +21,7 @@ const Collections = ({ category }) => {
     <Main>
       {filteredData.map((item) => (
         <Product key={item.id} onClick={() => handleItemClick(item.id)}>
-          <img src={item.image} alt={item.name} />
+          <img src={item.images.image} alt={item.name} />
           <h4>{item.name}</h4>
           <ItemCategory>Category - {item.category}</ItemCategory>
           <ItemPrice>
