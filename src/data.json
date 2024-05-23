@@ -14,12 +14,12 @@
     },
     "price": "150",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-shoes-men.jpg",
-        "image1":"/assets/image-shoes-men1.jpg",
-        "image2":"/assets/image-shoes-men2.jpg",
-        "image3":"/assets/image-shoes-men3.jpg",
-        "image4":"/assets/image-shoes-men4.jpg"
+    "images": {
+      "image": "/assets/image-shoes-men.jpg",
+      "image1": "/assets/image-shoes-men1.jpg",
+      "image2": "/assets/image-shoes-men2.jpg",
+      "image3": "/assets/image-shoes-men3.jpg",
+      "image4": "/assets/image-shoes-men4.jpg"
     }
   },
   {
@@ -28,7 +28,7 @@
     "category": "Women's Shoes",
     "company": "Family Style",
     "info": "Women's Solid Color Elastic Sandals",
-    "description": "lorem ipusm dollor",
+    "description": "Women's Solid Color Elastic Sandals, Cross Straps Chunky Heel Back Zipper Casual Shoes, Versatile Summer Comfy Shoes",
     "size": {
       "37": "In Stock",
       "38": "In Stock",
@@ -37,12 +37,12 @@
     },
     "price": "200",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-shoes-women.jpg",
-        "image1":"/assets/image-shoes-women1.jpg",
-        "image2":"/assets/image-shoes-women2.jpg",
-        "image3":"/assets/image-shoes-women3.jpg",
-        "image4":"/assets/image-shoes-women4.jpg.jpg"
+    "images": {
+      "image": "/assets/image-shoes-women.jpg",
+      "image1": "/assets/image-shoes-women1.jpg",
+      "image2": "/assets/image-shoes-women2.jpg",
+      "image3": "/assets/image-shoes-women3.jpg",
+      "image4": "/assets/image-shoes-women4.jpg"
     }
   },
   {
@@ -51,7 +51,7 @@
     "category": "Men's Pants",
     "company": "Family Style",
     "info": "Cotton Blend Men's Trendy Solid Wide Leg Jeans",
-    "description": "lorem ipusm dollor 1",
+    "description": "All Seasons Fashionable Jeans, Men's Blend Casual Street Style Stretch Jeans Pants",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -60,12 +60,12 @@
     },
     "price": "130",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-pants-men.jpg",
-        "image1":"/assets/image-pants-men1.jpg",
-        "image2":"/assets/image-pants-men2.jpg",
-        "image3":"/assets/image-pants-men3.jpg",
-        "image4":"/assets/image-pants-men4.jpg"
+    "images": {
+      "image": "/assets/image-pants-men.jpg",
+      "image1": "/assets/image-pants-men1.jpg",
+      "image2": "/assets/image-pants-men2.jpg",
+      "image3": "/assets/image-pants-men3.jpg",
+      "image4": "/assets/image-pants-men4.jpg"
     }
   },
   {
@@ -74,7 +74,7 @@
     "category": "Women's Dress",
     "company": "Family Style",
     "info": "Surplice Neck Split Hem Dress",
-    "description": "lorem ipusm dollor",
+    "description": "Surplice Neck Split Hem Dress, Casual Short Sleeve Cinched Waist Dress For Spring & Summer, Women's Clothing",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -83,12 +83,12 @@
     },
     "price": "170",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-dress-women.jpg",
-        "image1":"/assets/image-dress-women1.jpg",
-        "image2":"/assets/image-dress-women2.jpg",
-        "image3":"/assets/image-dress-women3.jpg",
-        "image4":"/assets/image-dress-women4.jpg"
+    "images": {
+      "image": "/assets/image-dress-women.jpg",
+      "image1": "/assets/image-dress-women1.jpg",
+      "image2": "/assets/image-dress-women2.jpg",
+      "image3": "/assets/image-dress-women3.jpg",
+      "image4": "/assets/image-dress-women4.jpg"
     }
   },
   {
@@ -97,7 +97,7 @@
     "category": "Children's Shoes",
     "company": "Family Style",
     "info": "Boys Girls Trendy Sandals",
-    "description": "lorem ipusm dollor",
+    "description": "JIAGEYA Trendy Breathable Open Toe Sandals For Boys, Lightweight Comfortable Anti Slip Sandals For Indoor Outdoor Beach, All Seasons",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -106,12 +106,12 @@
     },
     "price": "80",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-shoes-children.jpg",
-        "image1":"/assets/image-shoes-children1.jpg",
-        "image2":"/assets/image-shoes-children2.jpg",
-        "image3":"/assets/image-shoes-children3.jpg",
-        "image4":"/assets/image-shoes-children4.jpg"
+    "images": {
+      "image": "/assets/image-shoes-children.jpg",
+      "image1": "/assets/image-shoes-children1.jpg",
+      "image2": "/assets/image-shoes-children2.jpg",
+      "image3": "/assets/image-shoes-children3.jpg",
+      "image4": "/assets/image-shoes-children4.jpg"
     }
   },
   {
@@ -120,7 +120,7 @@
     "category": "Children's Jacket",
     "company": "Family Style",
     "info": "Girls Cartoon Pattern Casual Hoodie Jacket",
-    "description": "lorem ipusm dollor",
+    "description": "Girls Cartoon Hoodie Jackets Zip-up Rainbow Unicorn Print Casual Punch Jacket",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -129,12 +129,12 @@
     },
     "price": "75",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-jacket-children.jpg",
-        "image1":"/assets/image-jacket-children1.jpg",
-        "image2":"/assets/image-jacket-children2.jpg",
-        "image3":"/assets/image-jacket-children3.jpg",
-        "image4":"/assets/image-jacket-children4.jpg.jpg"
+    "images": {
+      "image": "/assets/image-jacket-children.jpg",
+      "image1": "/assets/image-jacket-children1.jpg",
+      "image2": "/assets/image-jacket-children2.jpg",
+      "image3": "/assets/image-jacket-children3.jpg",
+      "image4": "/assets/image-jacket-children4.jpg"
     }
   },
   {
@@ -142,8 +142,8 @@
     "name": "Children Clothes",
     "category": "Children's Pants",
     "company": "Family Style",
-    "info": "Boys Ripped Denim Jeans Long Pants Preppy Style Kids Clothes",
-    "description": "lorem ipusm dollor",
+    "info": "Boys Jeans Long Pants Preppy Style Kids Clothes",
+    "description": "Toddler Kid's Casual Jeans, Baby Boy's Clothing For Daily Wear",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -152,12 +152,12 @@
     },
     "price": "55",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-pants-kids.jpg",
-        "image1":"/assets/image-pants-kids1.jpg",
-        "image2":"/assets/image-pants-kids2.jpg",
-        "image3":"/assets/image-pants-kids3.jpg.jpg",
-        "image4":"/assets/image-pants-kids4.jpg.jpg.jpg"
+    "images": {
+      "image": "/assets/image-pants-kids.jpg",
+      "image1": "/assets/image-pants-kids1.jpg",
+      "image2": "/assets/image-pants-kids2.jpg",
+      "image3": "/assets/image-pants-kids3.jpg",
+      "image4": "/assets/image-pants-kids4.jpg"
     }
   },
   {
@@ -166,7 +166,7 @@
     "category": "Men's Jacket",
     "company": "Family Style",
     "info": "Mens Clothing Graphic Hooded Jacket",
-    "description": "lorem ipusm dollor",
+    "description": "Mens Clothing Graphic Hooded Jacket Coat For Men Full Zip Up Jacket For Autumn Winter",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -175,12 +175,12 @@
     },
     "price": "60",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-jacket-men.jpg",
-        "image1":"/assets/image-jacket-men1.jpg",
-        "image2":"/assets/image-jacket-men2.jpg",
-        "image3":"/assets/image-jacket-men3.jpg",
-        "image4":"/assets/image-jacket-men4.jpg"
+    "images": {
+      "image": "/assets/image-jacket-men.jpg",
+      "image1": "/assets/image-jacket-men1.jpg",
+      "image2": "/assets/image-jacket-men2.jpg",
+      "image3": "/assets/image-jacket-men3.jpg",
+      "image4": "/assets/image-jacket-men4.jpg"
     }
   },
   {
@@ -189,7 +189,7 @@
     "category": "Women's Jacket",
     "company": "Family Style",
     "info": "Color Block Zip Up Hooded Jacket",
-    "description": "lorem ipusm dollor",
+    "description": "Color Block Zip Up Hooded Jacket, Casual Simple Long Sleeve Outerwear, Women's Clothing",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -198,12 +198,12 @@
     },
     "price": "110",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-jacket-women.jpg",
-        "image1":"/assets/image-jacket-women1.jpg",
-        "image2":"/assets/image-jacket-women2.jpg",
-        "image3":"/assets/image-jacket-women3.jpg",
-        "image4":"/assets/image-jacket-women4.jpg"
+    "images": {
+      "image": "/assets/image-jacket-women.jpg",
+      "image1": "/assets/image-jacket-women1.jpg",
+      "image2": "/assets/image-jacket-women2.jpg",
+      "image3": "/assets/image-jacket-women3.jpg",
+      "image4": "/assets/image-jacket-women4.jpg"
     }
   },
   {
@@ -212,7 +212,7 @@
     "category": "Men's T-shirt",
     "company": "Family Style",
     "info": "Solid Waffle Knit T-shirt",
-    "description": "lorem ipusm dollor",
+    "description": "Solid Waffle Knit T-shirt With Crew Neck And Short Sleeve, Casual And Comfy Tops For Men's Summer Outdoors Wear",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -221,12 +221,12 @@
     },
     "price": "25",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-tshirt-men.jpg",
-        "image1":"/assets/image-tshirt-men1.jpg",
-        "image2":"/assets/image-tshirt-men2.jpg",
-        "image3":"/assets/image-tshirt-men3.jpg",
-        "image4":"/assets/image-tshirt-men4.jpg"
+    "images": {
+      "image": "/assets/image-tshirt-men.jpg",
+      "image1": "/assets/image-tshirt-men1.jpg",
+      "image2": "/assets/image-tshirt-men2.jpg",
+      "image3": "/assets/image-tshirt-men3.jpg",
+      "image4": "/assets/image-tshirt-men4.jpg"
     }
   },
   {
@@ -235,7 +235,7 @@
     "category": "Women's T-shirt",
     "company": "Family Style",
     "info": "Cute Cat Print T-shirt",
-    "description": "lorem ipusm dollor",
+    "description": "Cat Print T-shirt, Casual Short Sleeve Crew Neck Top For Spring & Summer, Women's Clothing",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -244,12 +244,12 @@
     },
     "price": "35",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-tshirt-women.jpg",
-        "image1":"/assets/image-tshirt-women1.jpg",
-        "image2":"/assets/image-tshirt-women2.jpg",
-        "image3":"/assets/image-tshirt-women3.jpg",
-        "image4":"/assets/image-tshirt-women4.jpg"
+    "images": {
+      "image": "/assets/image-tshirt-women.jpg",
+      "image1": "/assets/image-tshirt-women1.jpg",
+      "image2": "/assets/image-tshirt-women2.jpg",
+      "image3": "/assets/image-tshirt-women3.jpg",
+      "image4": "/assets/image-tshirt-women4.jpg"
     }
   },
   {
@@ -258,7 +258,7 @@
     "category": "Children's T-shirt",
     "company": "Family Style",
     "info": "Cute Anime Cats Graphic Print For Girls",
-    "description": "lorem ipusm dollor",
+    "description": "Cute Anime Cats Graphic Print For Girls, Comfy And Fit T-shirt Top Pullover For Summer For Outdoor Activities",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -267,12 +267,12 @@
     },
     "price": "15",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-tshirt-kids.jpg",
-        "image1":"/assets/image-tshirt-kids1.jpg",
-        "image2":"/assets/image-tshirt-kids2.jpg",
-        "image3":"/assets/image-tshirt-kids3.jpg",
-        "image4":"/assets/image-tshirt-kids4.jpg"
+    "images": {
+      "image": "/assets/image-tshirt-kids.jpg",
+      "image1": "/assets/image-tshirt-kids1.jpg",
+      "image2": "/assets/image-tshirt-kids2.jpg",
+      "image3": "/assets/image-tshirt-kids3.jpg",
+      "image4": "/assets/image-tshirt-kids4.jpg"
     }
   },
   {
@@ -281,7 +281,7 @@
     "category": "Men's Glass",
     "company": "Family Style",
     "info": "Trendy Driving Polarized Fashion Glasses",
-    "description": "lorem ipusm dollor",
+    "description": "Trendy Driving Polarized Fashion Glasses, UV Protection Fashion Glasses For Men Women Holiday Outdoor Sports Decors, Ideal choice for Gifts",
     "size": {
       "s": "In Stock",
       "m": "In Stoke",
@@ -290,12 +290,12 @@
     },
     "price": "25",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-glass-men.jpg",
-        "image1":"/assets/image-glass-men1.jpg",
-        "image2":"/assets/image-glass-men2.jpg",
-        "image3":"/assets/image-glass-men3.jpg",
-        "image4":"/assets/image-glass-men4.jpg"
+    "images": {
+      "image": "/assets/image-glass-men.jpg",
+      "image1": "/assets/image-glass-men1.jpg",
+      "image2": "/assets/image-glass-men2.jpg",
+      "image3": "/assets/image-glass-men3.jpg",
+      "image4": "/assets/image-glass-men4.jpg"
     }
   },
   {
@@ -304,7 +304,7 @@
     "category": "Women's Pants",
     "company": "Family Style",
     "info": "Slant Pockets Wide Leg Pants",
-    "description": "lorem ipusm dollor",
+    "description": "Slant Pockets Wide Leg Pants, Casual Loose High Waist Pants For Spring & Summer, Women's Clothing",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -313,12 +313,12 @@
     },
     "price": "99",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-pants-women.jpg",
-        "image1":"/assets/image-pants-women1.jpg",
-        "image2":"/assets/image-pants-women2.jpg",
-        "image3":"/assets/image-pants-women3.jpg",
-        "image4":"/assets/image-pants-women4.jpg"
+    "images": {
+      "image": "/assets/image-pants-women.jpg",
+      "image1": "/assets/image-pants-women1.jpg",
+      "image2": "/assets/image-pants-women2.jpg",
+      "image3": "/assets/image-pants-women3.jpg",
+      "image4": "/assets/image-pants-women4.jpg"
     }
   },
   {
@@ -326,8 +326,8 @@
     "name": "Children Clothes",
     "category": "Children's Short",
     "company": "Family Style",
-    "info": "Baby Boys 'Daddy's Boy' Cotton T-Shirt And Shorts Set",
-    "description": "lorem ipusm dollor",
+    "info": "Baby Boys Cotton T-Shirt And Shorts Set",
+    "description": "2pcs Baby Boys Daddy's Boy Letter Print Cotton T-Shirt And Shorts Set, Casual Style, Comfort Fit For Daily Wear, Black And Yellow Outfit",
     "size": {
       "s": "In Stock",
       "m": "Out Of Stock",
@@ -336,12 +336,12 @@
     },
     "price": "37",
     "currency": "GEL",
-    "images":{
-        "image":"/assets/image-short-kids.jpg",
-        "image1":"/assets/image-short-kids1.jpg",
-        "image2":"/assets/image-short-kids2.jpg",
-        "image3":"/assets/image-short-kids3.jpg",
-        "image4":"/assets/image-short-kids4.jpg"
+    "images": {
+      "image": "/assets/image-short-kids.jpg",
+      "image1": "/assets/image-short-kids1.jpg",
+      "image2": "/assets/image-short-kids2.jpg",
+      "image3": "/assets/image-short-kids3.jpg",
+      "image4": "/assets/image-short-kids4.jpg"
     }
   }
 ]

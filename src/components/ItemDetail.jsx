@@ -18,9 +18,7 @@ const ItemDetail = () => {
     );
   }
 
-  {
-    /* <img src={item.image} alt={item.name} /> */
-  }
+const itemPrice = Number(item.price).toFixed(2)
 
   return (
     <ItemSection>
@@ -41,7 +39,7 @@ const ItemDetail = () => {
           <ItemDescription>{item.description}</ItemDescription>
         </InfoAndDescription>
         <ItemPrice>
-          {item.currency} {item.price}
+          {item.currency} {itemPrice}
         </ItemPrice>
         <ItemQuantityAndCart>
           <ItemQuantity>

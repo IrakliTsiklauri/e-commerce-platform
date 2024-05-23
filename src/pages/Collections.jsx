@@ -5,17 +5,17 @@ import { useParams, useNavigate } from "react-router-dom";
 
 const Collections = ({ category }) => {
   const { category: paramCategory } = useParams();
-  const navigate = useNavigate()
-  console.log(navigate)
+  const navigate = useNavigate();
+  console.log(navigate);
   const selectedCategory = category || paramCategory;
 
   const filteredData = selectedCategory
     ? data.filter((item) => item.name === selectedCategory)
     : data;
 
-    const handleItemClick = (itemId) => {
-      navigate(`/items/${itemId}`);
-    };
+  const handleItemClick = (itemId) => {
+    navigate(`/items/${itemId}`);
+  };
 
   return (
     <Main>
@@ -25,7 +25,7 @@ const Collections = ({ category }) => {
           <h4>{item.name}</h4>
           <ItemCategory>Category - {item.category}</ItemCategory>
           <ItemPrice>
-            <span>Price:</span> {item.price} {item.currency}
+            <span>Price:</span> {Number(item.price).toFixed(2)} {item.currency}
           </ItemPrice>
         </Product>
       ))}

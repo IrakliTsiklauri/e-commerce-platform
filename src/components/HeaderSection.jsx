@@ -10,7 +10,9 @@ const HeaderSection = () => {
     <Header>
       <NavSide>
         <LogoImg>
-          <img src={logo} alt="logo" />
+          <NavigationLink to="/">
+            <img src={logo} alt="logo" />
+          </NavigationLink>
         </LogoImg>
         <Navigation>
           <NavigationLink to="/">Collections</NavigationLink>
