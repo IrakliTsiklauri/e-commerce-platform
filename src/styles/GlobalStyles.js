@@ -13,7 +13,6 @@ body, input, button{
 
 body{
     padding: 0 100px 100px;
-    overflow: hidden;
 
 }
 `;

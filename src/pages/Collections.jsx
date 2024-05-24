@@ -43,6 +43,14 @@ const Main = styled.div`
   justify-content: space-between;
   gap: 20px;
   margin-top: 50px;
+
+  @media (min-width: 600px) and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+  }
 `;
 
 const Product = styled.div`

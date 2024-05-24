@@ -21,34 +21,38 @@ const InfoSection = () => {
 
   return (
     <InfoSide>
-      <CompanyName>{item.company}</CompanyName>
-      <Shipping>
-        <FreeShipping>
-          <img src={iconOk} alt="iconOk" />
-          <p>Free shipping on all orders</p>
-        </FreeShipping>
-        <Offer>
-          <p>Limited-time offer</p>
-        </Offer>
-      </Shipping>
-      <InfoAndDescription>
-        <ItemInfo>{item.info}</ItemInfo>
-        <ItemDescription>{item.description}</ItemDescription>
-      </InfoAndDescription>
-      <ItemPrice>
-        {item.currency} {itemPrice}
-      </ItemPrice>
-      <ItemQuantityAndCart>
-        <ItemQuantity>
-          <span>-</span>
-          <p>0</p>
-          <span>+</span>
-        </ItemQuantity>
-        <AddToCart>
-          <img src={iconCart} alt="iconCart" />
-          <p>Add to cart</p>
-        </AddToCart>
-      </ItemQuantityAndCart>
+      <Info>
+        <CompanyName>{item.company}</CompanyName>
+        <Shipping>
+          <FreeShipping>
+            <img src={iconOk} alt="iconOk" />
+            <p>Free shipping on all orders</p>
+          </FreeShipping>
+          <Offer>
+            <p>Limited-time offer</p>
+          </Offer>
+        </Shipping>
+        <InfoAndDescription>
+          <ItemInfo>{item.info}</ItemInfo>
+          <ItemDescription>{item.description}</ItemDescription>
+        </InfoAndDescription>
+        <ItemPrice>
+          <span>
+            {item.currency} {itemPrice}
+          </span>
+        </ItemPrice>
+        <ItemQuantityAndCart>
+          <ItemQuantity>
+            <span>-</span>
+            <p>0</p>
+            <span>+</span>
+          </ItemQuantity>
+          <AddToCart>
+            <img src={iconCart} alt="iconCart" />
+            <p>Add to cart</p>
+          </AddToCart>
+        </ItemQuantityAndCart>
+      </Info>
     </InfoSide>
   );
 };
@@ -61,7 +65,20 @@ const InfoSide = styled.div`
   align-items: start;
   justify-content: center;
   gap: 40px;
-  width: 600px;
+  width: 100%;
+`;
+
+const Info = styled.div`
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 const Shipping = styled.div`
@@ -89,6 +106,10 @@ const FreeShipping = styled.div`
     color: #ee0f0f;
     font-size: 25px;
     font-weight: 700;
+
+    @media (max-width: 1240px) {
+      font-size: 15px;
+    }
   }
 `;
 
@@ -99,6 +120,10 @@ const Offer = styled.div`
   p {
     color: #ee0f0f;
     font-size: 20px;
+
+    @media (max-width: 1240px) {
+      font-size: 12px;
+    }
   }
 `;
 
@@ -120,24 +145,68 @@ const InfoAndDescription = styled.div`
 const ItemInfo = styled.p`
   font-size: 44px;
   font-weight: 700;
+  width: 100%;
+
+  @media (max-width: 1240px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    text-align: center;
+  }
 `;
 
 const ItemDescription = styled.p`
   font-size: 16px;
   font-weight: 400;
   color: #b7b3b3;
+  width: 100%;
+
+  @media (max-width: 1240px) {
+    font-size: 10px;
+  }
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    text-align: center;
+  }
 `;
 
-const ItemPrice = styled.span`
-  font-size: 28px;
-  font-weight: 700;
-  color: #0ed60e;
+const ItemPrice = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  span {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0ed60e;
+    text-align: start;
+
+    @media (max-width: 1240px) {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 const ItemQuantityAndCart = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 100%;
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const ItemQuantity = styled.div`
@@ -145,16 +214,35 @@ const ItemQuantity = styled.div`
   align-items: center;
   justify-content: space-around;
   /* padding: 5px; */
-  width: 160px;
+  width: 25%;
   height: 56px;
   background-color: rgba(246, 248, 253, 1);
   border-radius: 8px;
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 
   span {
     color: rgba(255, 126, 27, 1);
     font-size: 30px;
     font-weight: 700;
     cursor: pointer;
+
+    @media (max-width: 1240px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 500px) and (max-width: 900px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 30px;
+  }
   }
 
   p {
@@ -162,21 +250,36 @@ const ItemQuantity = styled.div`
     font-size: 30px;
     font-weight: 700;
     cursor: pointer;
+
+    @media (max-width: 1240px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 500px) and (max-width: 900px) {
+   font-size: 30px;
+  }
   }
 `;
 const AddToCart = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 272px;
+  width: 45%;
   height: 56px;
   background-color: rgba(255, 126, 27, 1);
   border-radius: 8px;
   gap: 10px;
   transition: 0.3s;
 
+  @media (min-width: 500px) and (max-width: 900px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
   &:hover {
-    background-color: rgba(192, 110, 48, 1);
+    background-color: rgba(255, 171, 106, 1);
     cursor: pointer;
   }
 
@@ -184,5 +287,13 @@ const AddToCart = styled.div`
     color: #fff;
     font-size: 16px;
     font-weight: 700;
+
+    @media (max-width: 1240px) {
+      font-size: 10px;
+    }
+
+    @media (min-width: 500px) and (max-width: 900px) {
+        font-size: 16px;
+  }
   }
 `;

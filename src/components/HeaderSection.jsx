@@ -53,6 +53,10 @@ const NavSide = styled.div`
   align-items: center;
   justify-content: center;
   gap: 50px;
+
+  @media (min-width: 900px) and (max-width: 1200px)  {
+    gap: 30px;
+  }
 `;
 
 const LogoImg = styled.div`
@@ -64,13 +68,23 @@ const LogoImg = styled.div`
   img {
     width: 150px;
     height: 75px;
+
+    @media (min-width: 900px) and (max-width: 1200px) {
+      width: 100px;
+      height: 50px;
+    }
   }
 `;
 
 const Navigation = styled.nav`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 15px;
+
+  @media (min-width: 900px) and (max-width: 1200px) {
+    gap: 10px;
+  }
 `;
 
 const NavigationLink = styled(NavLink)`
@@ -82,6 +96,13 @@ const NavigationLink = styled(NavLink)`
   &.active {
     font-weight: 700;
   }
+  @media (min-width: 900px) and (max-width: 1200px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 790px) {
+    font-size: 14px;
+  }
 `;
 
 const CartAndAvatar = styled.div`
@@ -89,6 +110,10 @@ const CartAndAvatar = styled.div`
   align-items: center;
   justify-content: center;
   gap: 50px;
+
+  @media (min-width: 900px) and (max-width: 1200px) {
+    gap: 30px;
+  }
 `;
 
 const Cart = styled.div`
@@ -100,6 +125,11 @@ const Cart = styled.div`
   img {
     width: 40px;
     height: 40px;
+
+    @media (min-width: 900px) and (max-width: 1200px) {
+      width: 25px;
+      height: 25px;
+    }
   }
 `;
 
@@ -114,5 +144,10 @@ const Avatar = styled.div`
     width: 80px;
     height: 80px;
     border-radius: 50%;
+
+    @media (min-width: 900px) and (max-width: 1200px) {
+      width: 45px;
+      height: 45px;
+    }
   }
 `;
