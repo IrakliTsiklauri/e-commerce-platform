@@ -136,11 +136,6 @@ const LittleImages = styled.div`
     width: 60%;
     height: 60%;
   }
-
-  @media (min-width: 500px) and (max-width: 600px) {
-    width: 100%;
-    height: 100%;
-  }
 `;
 
 const LittleImage = styled.div`

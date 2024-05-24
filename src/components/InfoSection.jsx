@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import iconCart from "../images/icon-cart-mini.png";
 import iconOk from "../images/photo-ok.webp";
 import styled from "styled-components";
@@ -9,10 +9,14 @@ const InfoSection = () => {
   const { itemId } = useParams();
   const item = data.find((item) => item.id === itemId);
 
+  const [selectedSize, setSelectedSize] = useState(
+    item && Object.keys(item.size)[0]
+  );
+
   if (!item) {
     return (
       <div>
-        <h1>item not found</h1>
+        <h1>Item not found</h1>
       </div>
     );
   }
@@ -41,6 +45,16 @@ const InfoSection = () => {
             {item.currency} {itemPrice}
           </span>
         </ItemPrice>
+          <ItemSize>
+            {Object.keys(item.size).map((size) => (
+              <span key={size} onClick={() => setSelectedSize(size)}>
+                {size.toUpperCase()}
+              </span>
+            ))}
+          </ItemSize>
+          <SizeInfo>
+            <p>{item.size[selectedSize]}</p>
+          </SizeInfo>
         <ItemQuantityAndCart>
           <ItemQuantity>
             <span>-</span>
@@ -106,10 +120,6 @@ const FreeShipping = styled.div`
     color: #ee0f0f;
     font-size: 25px;
     font-weight: 700;
-
-    @media (max-width: 1240px) {
-      font-size: 15px;
-    }
   }
 `;
 
@@ -120,10 +130,6 @@ const Offer = styled.div`
   p {
     color: #ee0f0f;
     font-size: 20px;
-
-    @media (max-width: 1240px) {
-      font-size: 12px;
-    }
   }
 `;
 
@@ -146,11 +152,6 @@ const ItemInfo = styled.p`
   font-size: 44px;
   font-weight: 700;
   width: 100%;
-
-  @media (max-width: 1240px) {
-    font-size: 30px;
-  }
-
   @media (min-width: 500px) and (max-width: 900px) {
     text-align: center;
   }
@@ -161,11 +162,6 @@ const ItemDescription = styled.p`
   font-weight: 400;
   color: #b7b3b3;
   width: 100%;
-
-  @media (max-width: 1240px) {
-    font-size: 10px;
-  }
-
   @media (min-width: 500px) and (max-width: 900px) {
     text-align: center;
   }
@@ -181,10 +177,6 @@ const ItemPrice = styled.div`
     font-weight: 700;
     color: #0ed60e;
     text-align: start;
-
-    @media (max-width: 1240px) {
-      font-size: 20px;
-    }
   }
 
   @media (min-width: 500px) and (max-width: 900px) {
@@ -192,6 +184,37 @@ const ItemPrice = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+  }
+`;
+
+
+
+const ItemSize = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  height: 50px;
+  background-color: #ddd8d8;
+  border-radius: 8px;
+
+  span {
+    font-size: 26px;
+    font-weight: 700;
+    color: #908d8d;
+    cursor: pointer;
+
+    &:hover{
+        color: red;
+    }
+  }
+`;
+
+const SizeInfo = styled.div`
+  p {
+    font-size: 18px;
+    color: #52d236;
+    font-weight: 700;
   }
 `;
 
@@ -213,7 +236,6 @@ const ItemQuantity = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* padding: 5px; */
   width: 25%;
   height: 56px;
   background-color: rgba(246, 248, 253, 1);
@@ -223,7 +245,7 @@ const ItemQuantity = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 50%;
   }
 
   span {
@@ -232,17 +254,13 @@ const ItemQuantity = styled.div`
     font-weight: 700;
     cursor: pointer;
 
-    @media (max-width: 1240px) {
-      font-size: 20px;
-    }
-
     @media (min-width: 500px) and (max-width: 900px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    font-size: 30px;
-  }
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      font-size: 30px;
+    }
   }
 
   p {
@@ -251,13 +269,9 @@ const ItemQuantity = styled.div`
     font-weight: 700;
     cursor: pointer;
 
-    @media (max-width: 1240px) {
-      font-size: 20px;
-    }
-
     @media (min-width: 500px) and (max-width: 900px) {
-   font-size: 30px;
-  }
+      font-size: 30px;
+    }
   }
 `;
 const AddToCart = styled.div`
@@ -275,7 +289,7 @@ const AddToCart = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 50%;
   }
 
   &:hover {
@@ -288,12 +302,8 @@ const AddToCart = styled.div`
     font-size: 16px;
     font-weight: 700;
 
-    @media (max-width: 1240px) {
-      font-size: 10px;
-    }
-
     @media (min-width: 500px) and (max-width: 900px) {
-        font-size: 16px;
-  }
+      font-size: 16px;
+    }
   }
 `;
