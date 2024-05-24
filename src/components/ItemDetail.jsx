@@ -4,18 +4,11 @@ import styled from "styled-components";
 import ImageSection from "./ImageSection";
 import InfoSection from "./InfoSection";
 
-
 const ItemDetail = () => {
-
-
-  
-
-
-
   return (
     <ItemSection>
       <ImageSection />
-      <InfoSection/>
+      <InfoSection />
     </ItemSection>
   );
 };
@@ -31,4 +24,3 @@ const ItemSection = styled.div`
   margin-top: 50px;
   gap: 10px;
 `;
-

@@ -1,6 +1,6 @@
 import React from "react";
 import cart from "../images/icon-cart.svg";
-import avatar from "../images/image-my-avatar.png";
+import avatar from "../images/image-avatar.png";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../images/image-logo.png";
