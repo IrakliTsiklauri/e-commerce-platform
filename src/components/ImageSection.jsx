@@ -139,9 +139,9 @@ const LittleImages = styled.div`
 `;
 
 const LittleImage = styled.div`
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
   outline: 2px solid orange;
   width: 20%;
   height: 20%;

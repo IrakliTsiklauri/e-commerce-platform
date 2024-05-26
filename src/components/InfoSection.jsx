@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import iconCart from "../images/icon-cart-mini.png";
 import iconOk from "../images/photo-ok.webp";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
 import data from "../data.json";
+import AddToCartSection from "./AddToCartSection";
 
 const InfoSection = () => {
   const { itemId } = useParams();
@@ -64,17 +64,7 @@ const InfoSection = () => {
         <SizeInfo>
           <p>{item.size[selectedSize]}</p>
         </SizeInfo>
-        <ItemQuantityAndCart>
-          <ItemQuantity>
-            <span>-</span>
-            <p>0</p>
-            <span>+</span>
-          </ItemQuantity>
-          <AddToCart>
-            <img src={iconCart} alt="iconCart" />
-            <p>Add to cart</p>
-          </AddToCart>
-        </ItemQuantityAndCart>
+        <AddToCartSection/>
       </Info>
     </InfoSide>
   );
@@ -232,92 +222,3 @@ const SizeInfo = styled.div`
   }
 `;
 
-const ItemQuantityAndCart = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-
-  @media (min-width: 500px) and (max-width: 900px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-`;
-
-const ItemQuantity = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 25%;
-  height: 56px;
-  background-color: rgba(246, 248, 253, 1);
-  border-radius: 8px;
-
-  @media (min-width: 500px) and (max-width: 900px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-  }
-
-  span {
-    color: rgba(255, 126, 27, 1);
-    font-size: 30px;
-    font-weight: 700;
-    cursor: pointer;
-
-    @media (min-width: 500px) and (max-width: 900px) {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
-      font-size: 30px;
-    }
-  }
-
-  p {
-    color: #000;
-    font-size: 30px;
-    font-weight: 700;
-    cursor: pointer;
-
-    @media (min-width: 500px) and (max-width: 900px) {
-      font-size: 30px;
-    }
-  }
-`;
-const AddToCart = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45%;
-  height: 56px;
-  background-color: rgba(255, 126, 27, 1);
-  border-radius: 8px;
-  gap: 10px;
-  transition: 0.3s;
-
-  @media (min-width: 500px) and (max-width: 900px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-  }
-
-  &:hover {
-    background-color: rgba(255, 171, 106, 1);
-    cursor: pointer;
-  }
-
-  p {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-
-    @media (min-width: 500px) and (max-width: 900px) {
-      font-size: 16px;
-    }
-  }
-`;
