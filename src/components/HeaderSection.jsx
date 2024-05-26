@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import cart from "../images/icon-cart.svg";
 import avatar from "../images/image-avatar.png";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../images/image-logo.png";
+import CartSection from "./CartSection";
 
 const HeaderSection = () => {
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
+  };
+
   return (
     <Header>
       <NavSide>
@@ -26,8 +33,9 @@ const HeaderSection = () => {
         </Navigation>
       </NavSide>
       <CartAndAvatar>
-        <Cart>
+        <Cart onClick={toggleCart}>
           <img src={cart} alt="cart" />
+          <CartSection isOpen={isCartOpen} />
         </Cart>
         <Avatar>
           <img src={avatar} alt="avatar" />
@@ -44,7 +52,7 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0;
+  padding: 30px 0;
   border-bottom: 1px solid rgba(228, 233, 242, 1);
 `;
 
@@ -54,7 +62,7 @@ const NavSide = styled.div`
   justify-content: center;
   gap: 50px;
 
-  @media (min-width: 900px) and (max-width: 1200px)  {
+  @media (min-width: 900px) and (max-width: 1200px) {
     gap: 30px;
   }
 `;
@@ -117,6 +125,7 @@ const CartAndAvatar = styled.div`
 `;
 
 const Cart = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -82,13 +82,6 @@ const ImgSide = styled.div`
   justify-content: center;
 `;
 
-// const Images = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// `;
-
 const MainImg = styled.div`
   display: flex;
   align-items: center;
