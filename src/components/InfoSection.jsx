@@ -13,6 +13,7 @@ const InfoSection = () => {
     item && Object.keys(item.size)[0]
   );
 
+
   if (!item) {
     return (
       <div>
@@ -20,6 +21,10 @@ const InfoSection = () => {
       </div>
     );
   }
+  const toggleSizeSelection = (size) => {
+    setSelectedSize((prevSize) => (prevSize === size ? null : size));
+  };
+
 
   const itemPrice = Number(item.price).toFixed(2);
 
@@ -45,16 +50,20 @@ const InfoSection = () => {
             {item.currency} {itemPrice}
           </span>
         </ItemPrice>
-          <ItemSize>
-            {Object.keys(item.size).map((size) => (
-              <span key={size} onClick={() => setSelectedSize(size)}>
-                {size.toUpperCase()}
-              </span>
-            ))}
-          </ItemSize>
-          <SizeInfo>
-            <p>{item.size[selectedSize]}</p>
-          </SizeInfo>
+        <ItemSize>
+          {Object.keys(item.size).map((size) => (
+            <span
+              key={size}
+              onClick={() => toggleSizeSelection(size)}
+              style={selectedSize === size ? { color: "#fc7614" } : {}}
+            >
+              {size.toUpperCase()}
+            </span>
+          ))}
+        </ItemSize>
+        <SizeInfo>
+          <p>{item.size[selectedSize]}</p>
+        </SizeInfo>
         <ItemQuantityAndCart>
           <ItemQuantity>
             <span>-</span>
@@ -187,8 +196,6 @@ const ItemPrice = styled.div`
   }
 `;
 
-
-
 const ItemSize = styled.div`
   display: flex;
   align-items: center;
@@ -204,9 +211,16 @@ const ItemSize = styled.div`
     color: #908d8d;
     cursor: pointer;
 
-    &:hover{
-        color: red;
-    }
+    /* &:hover {
+      color: red;
+    } */
+  }
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
   }
 `;
 

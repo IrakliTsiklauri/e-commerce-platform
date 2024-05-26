@@ -6,7 +6,6 @@ import { useParams, useNavigate } from "react-router-dom";
 const Collections = ({ category }) => {
   const { category: paramCategory } = useParams();
   const navigate = useNavigate();
-  console.log(navigate);
   const selectedCategory = category || paramCategory;
 
   const filteredData = selectedCategory
