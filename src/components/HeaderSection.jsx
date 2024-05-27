@@ -3,7 +3,7 @@ import cart from "../images/icon-cart.svg";
 import avatar from "../images/image-avatar.png";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../images/image-logo.png";
+import logo from "../images/familyLogo.jpg";
 import CartSection from "./CartSection";
 
 const HeaderSection = () => {
@@ -74,8 +74,8 @@ const LogoImg = styled.div`
   cursor: pointer;
 
   img {
-    width: 150px;
-    height: 75px;
+    width: 170px;
+    height: 90px;
 
     @media (min-width: 900px) and (max-width: 1200px) {
       width: 100px;

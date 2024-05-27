@@ -13,7 +13,6 @@ const InfoSection = () => {
     item && Object.keys(item.size)[0]
   );
 
-
   if (!item) {
     return (
       <div>
@@ -21,10 +20,10 @@ const InfoSection = () => {
       </div>
     );
   }
+
   const toggleSizeSelection = (size) => {
     setSelectedSize((prevSize) => (prevSize === size ? null : size));
   };
-
 
   const itemPrice = Number(item.price).toFixed(2);
 
@@ -64,7 +63,7 @@ const InfoSection = () => {
         <SizeInfo>
           <p>{item.size[selectedSize]}</p>
         </SizeInfo>
-        <AddToCartSection/>
+        <AddToCartSection />
       </Info>
     </InfoSide>
   );
@@ -221,4 +220,3 @@ const SizeInfo = styled.div`
     font-weight: 700;
   }
 `;
-

@@ -17,5 +17,5 @@ const AppLayout = () => {
 export default AppLayout;
 
 const Main = styled.div`
-  display: flex;
+  /* display: flex; */
 `;
