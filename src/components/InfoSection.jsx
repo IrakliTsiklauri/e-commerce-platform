@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useParams } from "react-router-dom";
 import data from "../data.json";
 import AddToCartSection from "./AddToCartSection";
+import ErrorPage from "../pages/ErrorPage";
 
 const InfoSection = () => {
   const { itemId } = useParams();
@@ -14,11 +15,7 @@ const InfoSection = () => {
   );
 
   if (!item) {
-    return (
-      <div>
-        <h1>Item not found</h1>
-      </div>
-    );
+    return <ErrorPage />;
   }
 
   const toggleSizeSelection = (size) => {

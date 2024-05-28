@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import iconCart from "../images/icon-cart-mini.png";
+import { CartContext } from "./AddToCart";
 
 const AddToCartSection = () => {
   const [quantity, setQuantity] = useState(0);
+  const { addToCart } = useContext(CartContext);
 
   const handleIncrease = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
@@ -13,6 +15,17 @@ const AddToCartSection = () => {
     setQuantity((prevQuantity) => (prevQuantity > 0 ? prevQuantity - 1 : 0));
   };
 
+  const handleAddToCart = () => {
+    if (quantity > 0) {
+      addToCart({
+        id: 1,
+        name: "New items have been added to the cart",
+        price: 125,
+        quantity,
+      });
+    }
+  };
+
   return (
     <ItemQuantityAndCart>
       <ItemQuantity>
@@ -20,10 +33,10 @@ const AddToCartSection = () => {
         <p>{quantity}</p>
         <span onClick={handleIncrease}>+</span>
       </ItemQuantity>
-      <AddToCart>
+      <AddToCartItems onClick={handleAddToCart}>
         <img src={iconCart} alt="iconCart" />
         <p>Add to cart</p>
-      </AddToCart>
+      </AddToCartItems>
     </ItemQuantityAndCart>
   );
 };
@@ -87,7 +100,7 @@ const ItemQuantity = styled.div`
   }
 `;
 
-const AddToCart = styled.div`
+const AddToCartItems = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
