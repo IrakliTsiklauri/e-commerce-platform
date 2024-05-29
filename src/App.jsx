@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import AppLayout from "./ui/AppLayout";
 import ItemDetail from "./components/ItemDetail";
 import ErrorPage from "./pages/ErrorPage";
+import Checkout from "./components/Checkout";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/items/:itemId" element={<ItemDetail />} />
+          <Route path="checkout" element={<Checkout/>}/>
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>

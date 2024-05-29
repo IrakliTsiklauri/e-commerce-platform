@@ -2,8 +2,13 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import iconCart from "../images/icon-cart-mini.png";
 import { CartContext } from "./AddToCart";
+import data from "../data.json"
+import { useParams } from "react-router-dom";
 
 const AddToCartSection = () => {
+  const { itemId } = useParams();
+  const item = data.find((item) => item.id === itemId);
+
   const [quantity, setQuantity] = useState(0);
   const { addToCart } = useContext(CartContext);
 
@@ -20,7 +25,7 @@ const AddToCartSection = () => {
       addToCart({
         id: 1,
         name: "New items have been added to the cart",
-        price: 125,
+        price: Number(item.price),
         quantity,
       });
     }

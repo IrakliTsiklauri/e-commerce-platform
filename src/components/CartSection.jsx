@@ -1,8 +1,19 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { CartContext } from "./AddToCart";
+import { useParams, useNavigate } from "react-router-dom";
+import data from "../data.json";
+
 const CartSection = ({ isOpen }) => {
+  const { itemId } = useParams();
+  const item = data.find((item) => item.id === itemId);
   const { cart } = useContext(CartContext);
+  const navigate = useNavigate();
+
+const handleCheckout = ()=>{
+    navigate("/checkout")
+}
+  //   const cartImg = item.images.image
 
   return (
     <CartSectionContainer isOpen={isOpen}>
@@ -13,14 +24,19 @@ const CartSection = ({ isOpen }) => {
         {cart.length > 0 ? (
           cart.map((item) => (
             <CartItem key={item.id}>
-              <img src={`../images/${item.id}.png`} alt={item.name} />
-              <ItemDetails>
-                <p>{item.name}</p>
-                <p>
-                  ${item.price.toFixed(2)} x {item.quantity} = $
-                  {(item.price * item.quantity).toFixed(2)}
-                </p>
-              </ItemDetails>
+              <CartInfo>
+                <img src={`../images/${item.id}.png`} alt={item.name} />
+                <ItemDetails>
+                  <p>{item.name}</p>
+                  <p>
+                    ₾{item.price.toFixed(2)} x {item.quantity} = ₾
+                    {(item.price * item.quantity).toFixed(2)}
+                  </p>
+                </ItemDetails>
+              </CartInfo>
+              <Checkout>
+                <Button onClick={handleCheckout}>Checkout</Button>
+              </Checkout>
             </CartItem>
           ))
         ) : (
@@ -62,11 +78,23 @@ const CartHeader = styled.div`
 
 const CartContent = styled.div`
   padding: 15px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  gap: 20px;
+`;
+
+const CartInfo = styled.div`
+  display: flex;
 `;
 
 const CartItem = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 30px;
   margin-bottom: 15px;
 
   img {
@@ -80,4 +108,21 @@ const ItemDetails = styled.div`
   p {
     margin: 0;
   }
+`;
+
+const Checkout = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
+
+const Button = styled.button`
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(255, 126, 27, 1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 `;
