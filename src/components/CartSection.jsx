@@ -1,19 +1,17 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { CartContext } from "./AddToCart";
-import { useParams, useNavigate } from "react-router-dom";
-import data from "../data.json";
+import { useNavigate } from "react-router-dom";
 
 const CartSection = ({ isOpen }) => {
-  const { itemId } = useParams();
-  const item = data.find((item) => item.id === itemId);
   const { cart } = useContext(CartContext);
+  console.log(cart);
+
   const navigate = useNavigate();
 
-const handleCheckout = ()=>{
-    navigate("/checkout")
-}
-  //   const cartImg = item.images.image
+  const handleCheckout = () => {
+    navigate("/checkout");
+  };
 
   return (
     <CartSectionContainer isOpen={isOpen}>
@@ -25,7 +23,7 @@ const handleCheckout = ()=>{
           cart.map((item) => (
             <CartItem key={item.id}>
               <CartInfo>
-                <img src={`../images/${item.id}.png`} alt={item.name} />
+                <img src={item.image} alt={item.name} />
                 <ItemDetails>
                   <p>{item.name}</p>
                   <p>

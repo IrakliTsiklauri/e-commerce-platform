@@ -27,6 +27,7 @@ const AddToCartSection = () => {
         name: "New items have been added to the cart",
         price: Number(item.price),
         quantity,
+        image: item.images.image
       });
     }
   };

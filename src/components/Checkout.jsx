@@ -1,13 +1,29 @@
 import React from "react";
 import styled from "styled-components";
+import { useParams } from "react-router-dom";
+import data from "../data.json";
 
 const Checkout = () => {
+  const { itemId } = useParams();
+//   console.log("itemId from URL:", itemId);
+
+  const item = data.find((item) => item.id === itemId);
+//   console.log("Found item:", item); 
+
+//   const abc = item.company
+//   console.log(abc)
+
+
   return (
     <CheckoutContainer>
       <Form>
         <InputDiv>
           <label>Full Name</label>
           <input type="text" name="name" placeholder="Full Name" />
+        </InputDiv>
+        <InputDiv>
+          <label>City/Region</label>
+          <input type="text" name="city" placeholder="City / Region" />
         </InputDiv>
         <InputDiv>
           <label>Address</label>
@@ -21,9 +37,20 @@ const Checkout = () => {
           <label>CVV</label>
           <input type="text" name="cvv" placeholder="CVV" />
         </InputDiv>
-        <SubBtn type="submit">Submit</SubBtn>
+        <SubBtn type="submit">Payment Of Value</SubBtn>
       </Form>
-      <CeckoutInfo>Hello</CeckoutInfo>
+      <CheckoutInfo>
+        {item ? (
+          <>
+            <h2>Company: {item.company}</h2>
+            <p>Item Name: {item.name}</p>
+            <p>Price: {item.price} {item.currency}</p>
+            <img src={item.images.image} alt={item.category} />
+          </>
+        ) : (
+          <p>No item selected</p>
+        )}
+      </CheckoutInfo>
     </CheckoutContainer>
   );
 };
@@ -58,6 +85,7 @@ const InputDiv = styled.div`
     border-radius: 8px;
     background-color: #e7e2e2;
     font-size: 18px;
+    outline-color: #18db18;
   }
 `;
 
@@ -65,6 +93,8 @@ const SubBtn = styled.button`
   width: 400px;
   padding: 15px;
   color: #fff;
+  font-size: 18px;
+  font-weight: 700;
   border: none;
   border-radius: 8px;
   background-color: rgba(255, 126, 27, 1);
@@ -75,4 +105,11 @@ const SubBtn = styled.button`
   }
 `;
 
-const CeckoutInfo = styled.div``;
+const CheckoutInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 20px;
+`;
