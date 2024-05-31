@@ -5,14 +5,8 @@ import data from "../data.json";
 
 const Checkout = () => {
   const { itemId } = useParams();
-//   console.log("itemId from URL:", itemId);
 
   const item = data.find((item) => item.id === itemId);
-//   console.log("Found item:", item); 
-
-//   const abc = item.company
-//   console.log(abc)
-
 
   return (
     <CheckoutContainer>
@@ -44,7 +38,9 @@ const Checkout = () => {
           <>
             <h2>Company: {item.company}</h2>
             <p>Item Name: {item.name}</p>
-            <p>Price: {item.price} {item.currency}</p>
+            <p>
+              Price: {item.price} {item.currency}
+            </p>
             <img src={item.images.image} alt={item.category} />
           </>
         ) : (
