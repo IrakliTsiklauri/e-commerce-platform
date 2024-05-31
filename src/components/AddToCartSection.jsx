@@ -4,6 +4,8 @@ import iconCart from "../images/icon-cart-mini.png";
 import { CartContext } from "./AddToCart";
 import data from "../data.json"
 import { useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
 
 const AddToCartSection = () => {
   const { itemId } = useParams();
@@ -29,6 +31,9 @@ const AddToCartSection = () => {
         quantity,
         image: item.images.image
       });
+      toast.success("New Items Added To The Cart")
+    }else{
+        toast.error("Quantity must be greater than 0 to add to cart")
     }
   };
 
@@ -43,6 +48,7 @@ const AddToCartSection = () => {
         <img src={iconCart} alt="iconCart" />
         <p>Add to cart</p>
       </AddToCartItems>
+      <ToastContainer/>
     </ItemQuantityAndCart>
   );
 };
