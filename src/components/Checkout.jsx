@@ -5,7 +5,6 @@ import data from "../data.json";
 
 const Checkout = () => {
   const { itemId } = useParams();
-
   const item = data.find((item) => item.id === itemId);
 
   return (
@@ -31,13 +30,14 @@ const Checkout = () => {
           <label>CVV</label>
           <input type="text" name="cvv" placeholder="CVV" />
         </InputDiv>
-        <SubBtn type="submit">Payment Of Value</SubBtn>
+        <SubBtn type="submit">Payment</SubBtn>
       </Form>
       <CheckoutInfo>
         {item ? (
           <>
+          <p>{item.id}</p>
             <h2>Company: {item.company}</h2>
-            <p>Item Name: {item.name}</p>
+            <p>Item Name: {item.category}</p>
             <p>
               Price: {item.price} {item.currency}
             </p>
@@ -108,4 +108,9 @@ const CheckoutInfo = styled.div`
   justify-content: center;
   gap: 10px;
   margin-left: 20px;
+
+  img{
+    width: 200px;
+    height: 200px;
+  }
 `;

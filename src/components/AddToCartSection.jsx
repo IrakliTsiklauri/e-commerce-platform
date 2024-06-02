@@ -25,13 +25,13 @@ const AddToCartSection = () => {
   const handleAddToCart = () => {
     if (quantity > 0) {
       addToCart({
-        id: 1,
+        id: "1",
         name: "New items have been added to the cart",
         price: Number(item.price),
         quantity,
         image: item.images.image
       });
-      toast.success("New Items Added To The Cart")
+      toast.success("New Items have been Added To The Cart")
     }else{
         toast.error("Quantity must be greater than 0 to add to cart")
     }

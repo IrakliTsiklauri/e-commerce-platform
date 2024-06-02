@@ -5,12 +5,11 @@ import { useNavigate } from "react-router-dom";
 
 const CartSection = ({ isOpen }) => {
   const { cart } = useContext(CartContext);
-  console.log(cart);
 
   const navigate = useNavigate();
 
-  const handleCheckout = () => {
-    navigate("/checkout");
+  const handleCheckout = (itemId) => {
+    navigate(`/checkout/${itemId}`);
   };
 
   return (
@@ -33,7 +32,7 @@ const CartSection = ({ isOpen }) => {
                 </ItemDetails>
               </CartInfo>
               <Checkout>
-                <Button onClick={handleCheckout}>Checkout</Button>
+                <Button onClick={() => handleCheckout(item.id)}>Checkout</Button>
               </Checkout>
             </CartItem>
           ))
@@ -77,7 +76,6 @@ const CartHeader = styled.div`
 const CartContent = styled.div`
   padding: 15px;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   height: 20vh;
