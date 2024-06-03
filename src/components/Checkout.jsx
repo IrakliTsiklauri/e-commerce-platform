@@ -35,7 +35,7 @@ const Checkout = () => {
       <CheckoutInfo>
         {item ? (
           <>
-          <p>{item.id}</p>
+            <p>ID: {item.id}</p>
             <h2>Company: {item.company}</h2>
             <p>Item Name: {item.category}</p>
             <p>
@@ -57,6 +57,15 @@ const CheckoutContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 50px;
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 const Form = styled.form`
@@ -82,6 +91,11 @@ const InputDiv = styled.div`
     background-color: #e7e2e2;
     font-size: 18px;
     outline-color: #18db18;
+
+    @media (min-width: 500px) and (max-width: 900px) {
+      padding: 10px;
+      font-size: 14px;
+    }
   }
 `;
 
@@ -109,7 +123,7 @@ const CheckoutInfo = styled.div`
   gap: 10px;
   margin-left: 20px;
 
-  img{
+  img {
     width: 200px;
     height: 200px;
   }
