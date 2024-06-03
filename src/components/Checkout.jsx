@@ -35,16 +35,27 @@ const Checkout = () => {
       <CheckoutInfo>
         {item ? (
           <>
-            <p>ID: {item.id}</p>
-            <h2>Company: {item.company}</h2>
-            <p>Item Name: {item.category}</p>
-            <p>
-              Price: {item.price} {item.currency}
-            </p>
+            <CompanyName>
+              {" "}
+              <p>Company:</p> {item.company}
+            </CompanyName>
+            <ItemName>
+              <p>Item Name: </p> {item.category}
+            </ItemName>
+            <ItemInfo>
+              <p>Item Inforamtion: </p> {item.info}
+            </ItemInfo>
+            <ItemDescription>
+              <p>Item Description: </p>
+              {item.description}
+            </ItemDescription>
+            <ItemPrice>
+              <p>Price: </p> {item.price} {item.currency}
+            </ItemPrice>
             <img src={item.images.image} alt={item.category} />
           </>
         ) : (
-          <p>No item selected</p>
+          <NoSelected>No item selected</NoSelected>
         )}
       </CheckoutInfo>
     </CheckoutContainer>
@@ -120,11 +131,71 @@ const CheckoutInfo = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
   margin-left: 20px;
 
   img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
+`;
+
+const CompanyName = styled.h2`
+  display: flex;
+  gap: 5px;
+  color: rgba(255, 126, 27, 1);
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Kumbh Sans", sans-serif;
+
+  p {
+    color: red;
+  }
+`;
+
+const ItemName = styled.p`
+  display: flex;
+  gap: 5px;
+  color: grey;
+  font-size: 18px;
+
+  p {
+    color: red;
+  }
+`;
+
+const ItemInfo = styled.p`
+  display: flex;
+  gap: 5px;
+  color: grey;
+  font-size: 18px;
+
+  p {
+    color: red;
+  }
+`;
+
+const ItemDescription = styled.p`
+  display: flex;
+  gap: 5px;
+  color: grey;
+  font-size: 12px;
+
+  p {
+    color: red;
+  }
+`;
+
+const ItemPrice = styled.p`
+  display: flex;
+  gap: 5px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0ed60e;
+  text-align: start;
+`;
+
+const NoSelected = styled.p`
+  font-size: 36px;
+  color: red;
 `;
