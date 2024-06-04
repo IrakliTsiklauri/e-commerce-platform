@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
-import data from "../data.json";
+import { SelectedItemsContext } from "./SelectedItemsContext";
+
 
 const Checkout = () => {
   const { itemId } = useParams();
-  const item = data.find((item) => item.id === itemId);
+  const { selectedItems, addItem } = useContext(SelectedItemsContext);
+
+  useEffect(() => {
+    if (itemId) {
+      addItem(itemId);
+    }
+  }, [itemId, addItem]);
+
+  const item = selectedItems.find((item) => item.id === itemId);
 
   return (
     <CheckoutContainer>
@@ -36,21 +45,19 @@ const Checkout = () => {
         {item ? (
           <>
             <CompanyName>
-              {" "}
-              <p>Company:</p> {item.company}
+              <span>Company:</span> {item.company}
             </CompanyName>
             <ItemName>
-              <p>Item Name: </p> {item.category}
+              <span>Item Name:</span> {item.category}
             </ItemName>
             <ItemInfo>
-              <p>Item Inforamtion: </p> {item.info}
+              <span>Item Information:</span> {item.info}
             </ItemInfo>
             <ItemDescription>
-              <p>Item Description: </p>
-              {item.description}
+              <span>Item Description:</span> {item.description}
             </ItemDescription>
             <ItemPrice>
-              <p>Price: </p> {item.price} {item.currency}
+              <span>Price:</span> {item.price} {item.currency}
             </ItemPrice>
             <img src={item.images.image} alt={item.category} />
           </>
