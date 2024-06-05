@@ -18,11 +18,15 @@ const HeaderSection = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <Header>
       <NavSide>
         <LogoImg>
-          <NavigationLink to="/">
+          <NavigationLink to="/" onClick={closeMenu}>
             <img src={logo} alt="logo" />
           </NavigationLink>
         </LogoImg>
@@ -32,12 +36,12 @@ const HeaderSection = () => {
           <div />
         </BurgerMenu>
         <Navigation isOpen={isMenuOpen}>
-          <NavigationLink to="/">Collections</NavigationLink>
-          <NavigationLink to="/collections/Men Clothes">Men</NavigationLink>
-          <NavigationLink to="/collections/Women Clothes">Women</NavigationLink>
-          <NavigationLink to="/collections/Children Clothes">Children</NavigationLink>
-          <NavigationLink to="/about">About</NavigationLink>
-          <NavigationLink to="/contact">Contact</NavigationLink>
+          <NavigationLink to="/" onClick={closeMenu}>Collections</NavigationLink>
+          <NavigationLink to="/collections/Men Clothes" onClick={closeMenu}>Men</NavigationLink>
+          <NavigationLink to="/collections/Women Clothes" onClick={closeMenu}>Women</NavigationLink>
+          <NavigationLink to="/collections/Children Clothes" onClick={closeMenu}>Children</NavigationLink>
+          <NavigationLink to="/about" onClick={closeMenu}>About</NavigationLink>
+          <NavigationLink to="/contact" onClick={closeMenu}>Contact</NavigationLink>
         </Navigation>
       </NavSide>
       <CartAndAvatar>
@@ -54,7 +58,6 @@ const HeaderSection = () => {
 };
 
 export default HeaderSection;
-
 
 const Header = styled.div`
   width: 100%;
@@ -123,7 +126,7 @@ const Navigation = styled.nav`
   @media (min-width: 500px) and (max-width: 900px) {
     flex-direction: column;
     position: absolute;
-    top: 60px; 
+    top: 170px; 
     left: 0;
     right: 0;
     background-color: white;
