@@ -8,9 +8,14 @@ import CartSection from "./CartSection";
 
 const HeaderSection = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -21,13 +26,16 @@ const HeaderSection = () => {
             <img src={logo} alt="logo" />
           </NavigationLink>
         </LogoImg>
-        <Navigation>
+        <BurgerMenu onClick={toggleMenu}>
+          <div />
+          <div />
+          <div />
+        </BurgerMenu>
+        <Navigation isOpen={isMenuOpen}>
           <NavigationLink to="/">Collections</NavigationLink>
           <NavigationLink to="/collections/Men Clothes">Men</NavigationLink>
           <NavigationLink to="/collections/Women Clothes">Women</NavigationLink>
-          <NavigationLink to="/collections/Children Clothes">
-            Children
-          </NavigationLink>
+          <NavigationLink to="/collections/Children Clothes">Children</NavigationLink>
           <NavigationLink to="/about">About</NavigationLink>
           <NavigationLink to="/contact">Contact</NavigationLink>
         </Navigation>
@@ -46,6 +54,7 @@ const HeaderSection = () => {
 };
 
 export default HeaderSection;
+
 
 const Header = styled.div`
   width: 100%;
@@ -84,6 +93,23 @@ const LogoImg = styled.div`
   }
 `;
 
+const BurgerMenu = styled.div`
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: rgba(105, 112, 125, 1);
+  }
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    display: flex;
+  }
+`;
+
 const Navigation = styled.nav`
   display: flex;
   flex-wrap: wrap;
@@ -92,6 +118,17 @@ const Navigation = styled.nav`
 
   @media (min-width: 900px) and (max-width: 1200px) {
     gap: 10px;
+  }
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   }
 `;
 
@@ -104,11 +141,17 @@ const NavigationLink = styled(NavLink)`
   &.active {
     font-weight: 700;
   }
+
   @media (min-width: 900px) and (max-width: 1200px) {
     font-size: 18px;
   }
 
-  @media (max-width: 790px) {
+  @media (min-width: 500px) and (max-width: 900px) {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  @media (max-width: 500px) {
     font-size: 14px;
   }
 `;
