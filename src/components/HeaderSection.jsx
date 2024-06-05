@@ -93,6 +93,11 @@ const LogoImg = styled.div`
       width: 100px;
       height: 50px;
     }
+
+    @media (min-width: 500px) and (max-width: 900px) {
+      width: 70px;
+      height: 40px;
+    }
   }
 `;
 
@@ -168,6 +173,8 @@ const CartAndAvatar = styled.div`
   @media (min-width: 900px) and (max-width: 1200px) {
     gap: 30px;
   }
+
+ 
 `;
 
 const Cart = styled.div`
@@ -182,6 +189,11 @@ const Cart = styled.div`
     height: 40px;
 
     @media (min-width: 900px) and (max-width: 1200px) {
+      width: 25px;
+      height: 25px;
+    }
+
+    @media (min-width: 500px) and (max-width: 900px) {
       width: 25px;
       height: 25px;
     }
@@ -203,6 +215,11 @@ const Avatar = styled.div`
     @media (min-width: 900px) and (max-width: 1200px) {
       width: 45px;
       height: 45px;
+    }
+
+    @media (min-width: 500px) and (max-width: 900px) {
+      width: 30px;
+      height: 30px;
     }
   }
 `;
