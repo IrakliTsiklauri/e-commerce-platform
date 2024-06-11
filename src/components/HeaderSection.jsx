@@ -36,12 +36,27 @@ const HeaderSection = () => {
           <div />
         </BurgerMenu>
         <Navigation isOpen={isMenuOpen}>
-          <NavigationLink to="/" onClick={closeMenu}>Collections</NavigationLink>
-          <NavigationLink to="/collections/Men Clothes" onClick={closeMenu}>Men</NavigationLink>
-          <NavigationLink to="/collections/Women Clothes" onClick={closeMenu}>Women</NavigationLink>
-          <NavigationLink to="/collections/Children Clothes" onClick={closeMenu}>Children</NavigationLink>
-          <NavigationLink to="/about" onClick={closeMenu}>About</NavigationLink>
-          <NavigationLink to="/contact" onClick={closeMenu}>Contact</NavigationLink>
+          <NavigationLink to="/" onClick={closeMenu}>
+            Collections
+          </NavigationLink>
+          <NavigationLink to="/collections/Men Clothes" onClick={closeMenu}>
+            Men
+          </NavigationLink>
+          <NavigationLink to="/collections/Women Clothes" onClick={closeMenu}>
+            Women
+          </NavigationLink>
+          <NavigationLink
+            to="/collections/Children Clothes"
+            onClick={closeMenu}
+          >
+            Children
+          </NavigationLink>
+          <NavigationLink to="/about" onClick={closeMenu}>
+            About
+          </NavigationLink>
+          <NavigationLink to="/contact" onClick={closeMenu}>
+            Contact
+          </NavigationLink>
         </Navigation>
       </NavSide>
       <CartAndAvatar>
@@ -75,6 +90,7 @@ const NavSide = styled.div`
   gap: 50px;
 
   @media (min-width: 900px) and (max-width: 1200px) {
+    justify-content: space-between;
     gap: 30px;
   }
 `;
@@ -98,6 +114,11 @@ const LogoImg = styled.div`
       width: 70px;
       height: 40px;
     }
+
+    @media (max-width: 500px) {
+      width: 60px;
+      height: 30px;
+    }
   }
 `;
 
@@ -116,6 +137,10 @@ const BurgerMenu = styled.div`
   @media (min-width: 500px) and (max-width: 900px) {
     display: flex;
   }
+
+  @media (max-width: 500px) {
+    display: flex;
+  }
 `;
 
 const Navigation = styled.nav`
@@ -131,7 +156,18 @@ const Navigation = styled.nav`
   @media (min-width: 500px) and (max-width: 900px) {
     flex-direction: column;
     position: absolute;
-    top: 170px; 
+    top: 170px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
     left: 0;
     right: 0;
     background-color: white;
@@ -174,7 +210,13 @@ const CartAndAvatar = styled.div`
     gap: 30px;
   }
 
- 
+  @media (min-width: 500px) and (max-width: 900px) {
+    gap: 20px;
+  }
+
+  @media (max-width: 500px) {
+    gap: 10px;
+  }
 `;
 
 const Cart = styled.div`
@@ -196,6 +238,11 @@ const Cart = styled.div`
     @media (min-width: 500px) and (max-width: 900px) {
       width: 25px;
       height: 25px;
+    }
+
+    @media (max-width: 500px){
+      width: 18px;
+      height: 18px;
     }
   }
 `;
@@ -220,6 +267,11 @@ const Avatar = styled.div`
     @media (min-width: 500px) and (max-width: 900px) {
       width: 30px;
       height: 30px;
+    }
+
+    @media (max-width: 500px) {
+      width: 23px;
+      height: 23px;
     }
   }
 `;

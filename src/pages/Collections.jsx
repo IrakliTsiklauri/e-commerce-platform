@@ -43,7 +43,14 @@ const Main = styled.div`
   gap: 20px;
   margin-top: 50px;
 
-  @media (min-width: 600px) and (max-width: 900px) {
+  @media (min-width: 500px) and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 500px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,10 +73,25 @@ const Product = styled.div`
   cursor: pointer;
   overflow: hidden;
 
+  @media (max-width: 500px) {
+    width: 200px;
+    height: 300px;
+  }
+
   img {
-    width: 280px;
+    width: 80px;
     height: 280px;
     border-radius: 8px;
+
+    @media (min-width: 500px) and (max-width: 900px) {
+      width: 280px;
+      height: 300px;
+    }
+
+    @media (max-width: 500px) {
+      width: 180px;
+      height: 280px;
+    }
   }
 
   h4 {
