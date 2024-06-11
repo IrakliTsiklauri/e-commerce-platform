@@ -2,10 +2,10 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import iconCart from "../images/icon-cart-mini.png";
 import { CartContext } from "./AddToCart";
-import data from "../data.json"
+import data from "../data.json";
 import { useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"
+import "react-toastify/dist/ReactToastify.css";
 
 const AddToCartSection = () => {
   const { itemId } = useParams();
@@ -29,11 +29,11 @@ const AddToCartSection = () => {
         name: "New items have been added to the cart",
         price: Number(item.price),
         quantity,
-        image: item.images.image
+        image: item.images.image,
       });
-      toast.success("New Items have been Added To The Cart")
-    }else{
-        toast.error("Quantity must be greater than 0 to add to cart")
+      toast.success("New Items have been Added To The Cart");
+    } else {
+      toast.error("Quantity must be greater than 0 to add to cart");
     }
   };
 
@@ -48,7 +48,7 @@ const AddToCartSection = () => {
         <img src={iconCart} alt="iconCart" />
         <p>Add to cart</p>
       </AddToCartItems>
-      <ToastContainer/>
+      <ToastContainer />
     </ItemQuantityAndCart>
   );
 };
@@ -62,6 +62,13 @@ const ItemQuantityAndCart = styled.div`
   width: 100%;
 
   @media (min-width: 500px) and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 500px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,6 +92,13 @@ const ItemQuantity = styled.div`
     width: 50%;
   }
 
+  @media (max-width: 500px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
   span {
     color: rgba(255, 126, 27, 1);
     font-size: 30px;
@@ -92,6 +106,14 @@ const ItemQuantity = styled.div`
     cursor: pointer;
 
     @media (min-width: 500px) and (max-width: 900px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      font-size: 30px;
+    }
+
+    @media (max-width: 500px) {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -128,6 +150,13 @@ const AddToCartItems = styled.div`
     align-items: center;
     justify-content: center;
     width: 50%;
+  }
+
+  @media (max-width: 500px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   &:hover {
