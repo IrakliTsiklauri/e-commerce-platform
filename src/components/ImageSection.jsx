@@ -125,7 +125,7 @@ const LittleImages = styled.div`
     height: 70%;
   }
 
-  @media (min-width: 600px) and (max-width: 900px) {
+  @media (min-width: 500px) and (max-width: 900px) {
     width: 60%;
     height: 60%;
   }
@@ -140,6 +140,8 @@ const LittleImage = styled.div`
   height: 20%;
   border-radius: 5px;
   transition: 0.3s;
+
+
 
   &:hover {
     opacity: 0.5;
@@ -175,10 +177,30 @@ const ModalImage = styled.div`
   height: 600px;
   border-radius: 10px;
 
+  @media (min-width: 500px) and (max-width: 900px) {
+    width: 400px;
+    height: 400px;
+  }
+
+  @media (max-width: 500px){
+    width: 300px;
+    height: 300px;
+  }
+
   img {
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    height: 600px;
     border-radius: 10px;
+
+    @media (min-width: 500px) and (max-width: 900px) {
+    width: 400px;
+    height: 400px;
+  }
+
+  @media (max-width: 500px){
+    width: 300px;
+    height: 300px;
+  }
   }
 `;
 
